@@ -1,0 +1,83 @@
+end of initialization
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+MakePDF init param=<__main__.TakeList object at 0x7fbe9e1502e0>
+MakePDF func start self.param={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'location\tready\tfor\tselection.\tSimilarly,\tclicking\ton\ta\tclass\tname\tdisplays\ta\tmenu', 'origin': (72.0, 711.3600463867188), 'bbox': (72.0, 697.1184692382812, 539.4226684570312, 716.5440673828125)}
+function nnew_page
+before while rc=12
+self.param={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'location\tready\tfor\tselection.\tSimilarly,\tclicking\ton\ta\tclass\tname\tdisplays\ta\tmenu', 'origin': (72.0, 711.3600463867188), 'bbox': (72.0, 697.1184692382812, 539.4226684570312, 716.5440673828125)}
+while verify height self.right_down.y + add_right_down_y=719.0440673828125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=697.1184692382812 *** self.right_down.x=539.4226684570312 *** self.right_down.y=699.6184692382812  ****
+while verify height float(self.height_page)=792.0
+add_right_down_y=17.42559814453125
+make_paragraph self.right_down.y=699.6184692382812
+make_rect self.left_up.x=72.0, self.left_up.y=697.1184692382812,self.right_down.x=539.4226684570312, self.right_down.y=699.6184692382812
+text='location ready for selection. Similarly, clicking on a class name displays a menu'
+rc=11.325597763061523
+make_paragraph self.right_down.y=699.6184692382812
+while rc=11.325597763061523
+while verify height self.right_down.y + add_right_down_y=717.0440673828125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=697.1184692382812 *** self.right_down.x=539.4226684570312 *** self.right_down.y=699.6184692382812  ****
+while verify height float(self.height_page)=792.0
+add_right_down_y=15.42559814453125
+make_paragraph self.right_down.y=699.6184692382812
+make_rect self.left_up.x=72.0, self.left_up.y=697.1184692382812,self.right_down.x=539.4226684570312, self.right_down.y=699.6184692382812
+text='location ready for selection. Similarly, clicking on a class name displays a menu'
+rc=9.325597763061523
+make_paragraph self.right_down.y=699.6184692382812
+while rc=9.325597763061523
+while verify height self.right_down.y + add_right_down_y=715.0440673828125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=697.1184692382812 *** self.right_down.x=539.4226684570312 *** self.right_down.y=699.6184692382812  ****
+while verify height float(self.height_page)=792.0
+add_right_down_y=13.42559814453125
+make_paragraph self.right_down.y=699.6184692382812
+make_rect self.left_up.x=72.0, self.left_up.y=697.1184692382812,self.right_down.x=539.4226684570312, self.right_down.y=699.6184692382812
+text='location ready for selection. Similarly, clicking on a class name displays a menu'
+rc=7.325597763061523
+make_paragraph self.right_down.y=699.6184692382812
+while rc=7.325597763061523
+while verify height self.right_down.y + add_right_down_y=713.0440673828125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=697.1184692382812 *** self.right_down.x=539.4226684570312 *** self.right_down.y=699.6184692382812  ****
+while verify height float(self.height_page)=792.0
+add_right_down_y=11.42559814453125
+make_paragraph self.right_down.y=699.6184692382812
+make_rect self.left_up.x=72.0, self.left_up.y=697.1184692382812,self.right_down.x=539.4226684570312, self.right_down.y=699.6184692382812
+text='location ready for selection. Similarly, clicking on a class name displays a menu'
+rc=5.325597763061523
+make_paragraph self.right_down.y=699.6184692382812
+while rc=5.325597763061523
+after while self.left_up=Point(72.0, 697.1184692382812) self.right_down=Point(539.4226684570312, 714.3774007161459)
+before while rc=12
+self.param={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'location\tready\tfor\tselection.\tSimilarly,\tclicking\ton\ta\tclass\tname\tdisplays\ta\tmenu', 'origin': (72.0, 711.3600463867188), 'bbox': (72.0, 697.1184692382812, 539.4226684570312, 716.5440673828125)}
+while verify height self.right_down.y + add_right_down_y=733.8029988606771
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=697.1184692382812 *** self.right_down.x=539.4226684570312 *** self.right_down.y=714.3774007161459  ****
+while verify height float(self.height_page)=792.0
+add_right_down_y=17.42559814453125
+make_paragraph self.right_down.y=714.3774007161459
+make_rect self.left_up.x=72.0, self.left_up.y=697.1184692382812,self.right_down.x=539.4226684570312, self.right_down.y=714.3774007161459

@@ -1,0 +1,31 @@
+{% extends "base.html" %} <!-- это можно закоментировать и отключатся боковые ссылки, сслки останутся, но работать не будут -->
+
+{% block title %}FastAPI Starter{% endblock %}
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block page_content %}
+{% include 'include/sidebar.html' %}
+<!-- <h1> -->
+    <!-- Welcome to FastAPI Starter. -->
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col">
+                {{data.text|safe}}
+            </div>
+        </div>
+    </main><!-- /.container -->
+<!-- </h1> -->
+
+{{data.page}}
+
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}

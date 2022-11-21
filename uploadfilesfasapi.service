@@ -1,0 +1,25 @@
+[Unit]
+
+Description=Gunicorn Daemon for FastAPI Demo Application
+
+After=network.target
+
+
+
+[Service]
+
+User=serg
+
+Group=www-data
+
+WorkingDirectory=/home/serg/fastapi/site/app
+
+Environment="PATH=/home/serg/fastapi/bin"
+
+ExecStart=/home/serg/fastapi/bin/gunicorn -c gunicorn_conf.py main2:app
+
+
+
+[Install]
+
+WantedBy=multi-user.target

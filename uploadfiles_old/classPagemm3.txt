@@ -1,0 +1,908 @@
+translate text texts[0]='Studio that cannot be configured and tailored to your specific needs.  The  Configure  menu  also  includes  an  option  to  check  if  updates  to  Android  Studio are available for download.  6.2 The Main Window  '
+text_ru='Студия, которая не может быть спланирована и адаптирована к вашим конкретным потребностям. Меню Настроить также включает опцию проверить, имеются ли обновления в студии Android для загрузки.' 
+ self.klc[-1]["text"]='*ru-ru-ru*' 
+ lx=35.0 
+ ly=153.4176025390625 
+ rx=587.0  
+ ry=165.4176025390625 
+ self.klc[-1]["bbox"]=(35.0, 153.4176025390625, 587.0, 165.4176025390625)
+translate text texts[0]='When a new project is created, or an existing one opened, the Android Studio  main window   will appear. When multiple projects are open simultaneously, each  will be assigned its own main window. The precise configuration of the window  will vary depending on which tools and panels were displayed the last time the  project was open, but will typically resemble that of   Figure 6-2  .'
+text_ru='При создании нового или открытии существующего основного окна студии &quot; Андроид &quot; появится. При одновременном открытии нескольких проектов каждому из них будет присвоено собственное основное окно. Точная конфигурация окна будет варьироваться в зависимости от того, какие инструменты и панели были показаны в последний раз, когда проект был открыт, но, как правило, будет похожа на рис. 6-2.' 
+ self.klc[-1]["text"]='*ru-ru-ru*' 
+ lx=35.0 
+ ly=242.0640106201172 
+ rx=587.0  
+ ry=254.0640106201172 
+ self.klc[-1]["bbox"]=(35.0, 242.0640106201172, 587.0, 254.0640106201172)
+translate text texts[0]='Figure 6-2  '
+text_ru='Рисунок 6-2' 
+ self.klc[-1]["text"]='*ru-ru-ru*' 
+ lx=35.0 
+ ly=497.66400146484375 
+ rx=587.0  
+ ry=509.66400146484375 
+ self.klc[-1]["bbox"]=(35.0, 497.66400146484375, 587.0, 509.66400146484375)
+translate text texts[0]='The various elements of the main window can be summarized as follows:  A  Menu Bar      Contains  a  range  of  menus  for  performing  tasks  within  the  Android Studio environment.  B    Toolbar      A  selection  of  shortcuts  to  frequently  performed  actions.  The  toolbar buttons provide quicker access to a select group of menu bar actions. The  toolbar  can  be  customized  by  right-clicking  on  the  bar  and  selecting  the  Customize Menus and Toolbars…   menu option. If the toolbar is not visible, it can  be displayed using the   View -> Appearance -> Toolbar   menu option.  C  Navigation Bar    The navigation bar provides a convenient way to move  around the files and folders that make up the project. Clicking on an element in  the navigation bar will drop down a menu listing the subfolders and files at that  location ready for selection. Similarly, clicking on a class name displays a menu  '
+text_ru='Различные элементы главного окна можно резюмировать следующим образом: &lt; &lt; Панель меню &gt; &gt; содержит ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; включает ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; обеспечивает более быстрый доступ к выбранной группе инструментов меню. &lt; &lt; Панель инструментов &gt; &gt; может быть адаптирована путем щелчки правой кнопкой на панели и выбора меню &lt; &lt; Настройка &gt; &gt; и &lt; &lt; Настройка &gt; &gt;. Если панель инструментов не видна, то она может быть выставлена с помощью меню, в котором указаны для выбора.' 
+ self.klc[-1]["text"]='*ru-ru-ru*' 
+ lx=35.0 
+ ly=716.5440673828125 
+ rx=587.0  
+ ry=728.5440673828125 
+ self.klc[-1]["bbox"]=(35.0, 716.5440673828125, 587.0, 728.5440673828125)
+end of initialization
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+*****************
+tgg.get_text()='Studio\tthat\tcannot\tbe\tconfigured\tand\ttailored\tto\tyour\tspecific\tneeds.\nThe\t Configure\t menu\t also\t includes\t an\t option\t to\t check\t if\t updates\t to\t Android\nStudio\tare\tavailable\tfor\tdownload.\n6.2\tThe\tMain\tWindow\nWhen\ta\tnew\tproject\tis\tcreated,\tor\tan\texisting\tone\topened,\tthe\tAndroid\tStudio\nmain\twindow\twill\tappear.\tWhen\tmultiple\tprojects\tare\topen\tsimultaneously,\teach\nwill\tbe\tassigned\tits\town\tmain\twindow.\tThe\tprecise\tconfiguration\tof\tthe\twindow\nwill\tvary\tdepending\ton\twhich\ttools\tand\tpanels\twere\tdisplayed\tthe\tlast\ttime\tthe\nproject\twas\topen,\tbut\twill\ttypically\tresemble\tthat\tof\tFigure\t6-2.\nFigure\t6-2\nThe\tvarious\telements\tof\tthe\tmain\twindow\tcan\tbe\tsummarized\tas\tfollows:\nA\t–\tMenu\tBar\t –\t Contains\t a\t range\t of\t menus\t for\t performing\t tasks\t within\t the\nAndroid\tStudio\tenvironment.\nB\t –\t Toolbar\t –\t A\t selection\t of\t shortcuts\t to\t frequently\t performed\t actions.\t The\ntoolbar\tbuttons\tprovide\tquicker\taccess\tto\ta\tselect\tgroup\tof\tmenu\tbar\tactions.\tThe\ntoolbar\t can\t be\t customized\t by\t right-clicking\t on\t the\t bar\t and\t selecting\t the\nCustomize\tMenus\tand\tToolbars…\tmenu\toption.\tIf\tthe\ttoolbar\tis\tnot\tvisible,\tit\tcan\nbe\tdisplayed\tusing\tthe\tView\t->\tAppearance\t->\tToolbar\tmenu\toption.\nC\t–\tNavigation\tBar\t–\tThe\tnavigation\tbar\tprovides\ta\tconvenient\tway\tto\tmove\naround\tthe\tfiles\tand\tfolders\tthat\tmake\tup\tthe\tproject.\tClicking\ton\tan\telement\tin\nthe\tnavigation\tbar\twill\tdrop\tdown\ta\tmenu\tlisting\tthe\tsubfolders\tand\tfiles\tat\tthat\nlocation\tready\tfor\tselection.\tSimilarly,\tclicking\ton\ta\tclass\tname\tdisplays\ta\tmenu\n'
+*******************
+tgg.get_text("blocks")=[(72.0, 69.27840423583984, 539.8181762695312, 153.4176025390625, 'Studio\tthat\tcannot\tbe\tconfigured\tand\ttailored\tto\tyour\tspecific\tneeds.\nThe\t Configure\t menu\t also\t includes\t an\t option\t to\t check\t if\t updates\t to\t Android\nStudio\tare\tavailable\tfor\tdownload.\n6.2\tThe\tMain\tWindow\n', 0, 0), (72.0, 153.51840209960938, 539.9495849609375, 242.0640106201172, 'When\ta\tnew\tproject\tis\tcreated,\tor\tan\texisting\tone\topened,\tthe\tAndroid\tStudio\nmain\twindow\twill\tappear.\tWhen\tmultiple\tprojects\tare\topen\tsimultaneously,\teach\nwill\tbe\tassigned\tits\town\tmain\twindow.\tThe\tprecise\tconfiguration\tof\tthe\twindow\nwill\tvary\tdepending\ton\twhich\ttools\tand\tpanels\twere\tdisplayed\tthe\tlast\ttime\tthe\nproject\twas\topen,\tbut\twill\ttypically\tresemble\tthat\tof\tFigure\t6-2.\n', 1, 0), (114.47998046875, 245.52000427246094, 497.5199890136719, 478.08001708984375, '<image: DeviceRGB, width: 1505, height: 912, bpc: 8>', 2, 1), (276.2549743652344, 478.2384033203125, 335.7494812011719, 497.66400146484375, 'Figure\t6-2\n', 3, 0), (72.0, 498.3984069824219, 539.9370727539062, 716.5440673828125, 'The\tvarious\telements\tof\tthe\tmain\twindow\tcan\tbe\tsummarized\tas\tfollows:\nA\t–\tMenu\tBar\t –\t Contains\t a\t range\t of\t menus\t for\t performing\t tasks\t within\t the\nAndroid\tStudio\tenvironment.\nB\t –\t Toolbar\t –\t A\t selection\t of\t shortcuts\t to\t frequently\t performed\t actions.\t The\ntoolbar\tbuttons\tprovide\tquicker\taccess\tto\ta\tselect\tgroup\tof\tmenu\tbar\tactions.\tThe\ntoolbar\t can\t be\t customized\t by\t right-clicking\t on\t the\t bar\t and\t selecting\t the\nCustomize\tMenus\tand\tToolbars…\tmenu\toption.\tIf\tthe\ttoolbar\tis\tnot\tvisible,\tit\tcan\nbe\tdisplayed\tusing\tthe\tView\t->\tAppearance\t->\tToolbar\tmenu\toption.\nC\t–\tNavigation\tBar\t–\tThe\tnavigation\tbar\tprovides\ta\tconvenient\tway\tto\tmove\naround\tthe\tfiles\tand\tfolders\tthat\tmake\tup\tthe\tproject.\tClicking\ton\tan\telement\tin\nthe\tnavigation\tbar\twill\tdrop\tdown\ta\tmenu\tlisting\tthe\tsubfolders\tand\tfiles\tat\tthat\nlocation\tready\tfor\tselection.\tSimilarly,\tclicking\ton\ta\tclass\tname\tdisplays\ta\tmenu\n', 4, 0)]
+*******************
+*******************
+{**df}
+MakePDF init 
+calling start
+MakePDF func start next param
+function nnew_page
+self.left_up.x=72.0 *** self.left_up.y=69.27840423583984 *** self.right_down.x=465.4219665527344 *** self.right_down.y=88.7040023803711 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'Studio that cannot be configured and tailored to your specific needs. ', 'origin': (72.0, 83.52000427246094), 'bbox': (72.0, 69.27840423583984, 465.4219665527344, 88.7040023803711)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=88.7040023803711
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=69.27840423583984 *** self.right_down.x=465.4219665527344 *** self.right_down.y=88.7040023803711 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=88.7040023803711
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=88.7040023803711
+make_rect left_upx=72.0, left_upy=69.27840423583984,right_downx=465.4219665527344, right_downy=96.12960052490234
+text='\x0bStudio that cannot be configured and tailored to your specific needs. '
+rc=5.501196384429932
+make_paragraph self.right_down.y=88.7040023803711
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=76.7040023803711
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=69.27840423583984 *** self.right_down.x=465.4219665527344 *** self.right_down.y=88.7040023803711 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=76.7040023803711
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=88.7040023803711
+make_rect left_upx=72.0, left_upy=69.27840423583984,right_downx=465.4219665527344, right_downy=90.62840414047241
+text='\x0bStudio that cannot be configured and tailored to your specific needs. '
+rc=0
+make_paragraph self.right_down.y=88.7040023803711
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 69.27840423583984) self.right_down=Point(465.4219665527344, 88.7040023803711)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=92.4980239868164 *** self.right_down.x=539.8181762695312 *** self.right_down.y=111.92362213134766 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'The  Configure  menu  also  includes  an  option  to  check  if  updates  to  Android ', 'origin': (72.0, 103.68000793457031), 'bbox': (72.0, 89.43840789794922, 539.8181762695312, 108.86400604248047)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=111.92362213134766
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=92.4980239868164 *** self.right_down.x=539.8181762695312 *** self.right_down.y=111.92362213134766 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=111.92362213134766
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=111.92362213134766
+make_rect left_upx=72.0, left_upy=92.4980239868164,right_downx=539.8181762695312, right_downy=119.3492202758789
+text='\x0bThe  Configure  menu  also  includes  an  option  to  check  if  updates  to  Android '
+rc=5.501196384429932
+make_paragraph self.right_down.y=111.92362213134766
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=99.92362213134766
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=92.4980239868164 *** self.right_down.x=539.8181762695312 *** self.right_down.y=111.92362213134766 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=99.92362213134766
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=111.92362213134766
+make_rect left_upx=72.0, left_upy=92.4980239868164,right_downx=539.8181762695312, right_downy=113.84802389144897
+text='\x0bThe  Configure  menu  also  includes  an  option  to  check  if  updates  to  Android '
+rc=0
+make_paragraph self.right_down.y=111.92362213134766
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 92.4980239868164) self.right_down=Point(539.8181762695312, 111.92362213134766)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=115.7179946899414 *** self.right_down.x=268.3106994628906 *** self.right_down.y=135.14359283447266 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'Studio are available for download. ', 'origin': (72.0, 120.96000671386719), 'bbox': (72.0, 106.7184066772461, 268.3106994628906, 126.14400482177734)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=135.14359283447266
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=115.7179946899414 *** self.right_down.x=268.3106994628906 *** self.right_down.y=135.14359283447266 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=135.14359283447266
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=135.14359283447266
+make_rect left_upx=72.0, left_upy=115.7179946899414,right_downx=268.3106994628906, right_downy=142.5691909790039
+text='\x0bStudio are available for download. '
+rc=5.501196384429932
+make_paragraph self.right_down.y=135.14359283447266
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=123.14359283447266
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=115.7179946899414 *** self.right_down.x=268.3106994628906 *** self.right_down.y=135.14359283447266 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=123.14359283447266
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=135.14359283447266
+make_rect left_upx=72.0, left_upy=115.7179946899414,right_downx=268.3106994628906, right_downy=137.06799459457397
+text='\x0bStudio are available for download. '
+rc=0
+make_paragraph self.right_down.y=135.14359283447266
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 115.7179946899414) self.right_down=Point(268.3106994628906, 135.14359283447266)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=138.93801879882812 *** self.right_down.x=255.33587646484375 *** self.right_down.y=166.13385772705078 
+before while rc=12
+g={'size': 20.15999984741211, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': '6.2 The Main Window ', 'origin': (72.0, 146.16000366210938), 'bbox': (72.0, 126.22176361083984, 255.33587646484375, 153.4176025390625)}
+before while add_right_down_y=27.195838928222656
+while verify height add_right_down_y=27.195838928222656 self.left_up.y + add_right_down_y=166.13385772705078
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=138.93801879882812 *** self.right_down.x=255.33587646484375 *** self.right_down.y=166.13385772705078 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=27.195838928222656
+**** ** ****** self.left_up.y + add_right_down_y=166.13385772705078
+add_right_down_y=15.195838928222656
+make_paragraph self.right_down.y=166.13385772705078
+make_rect left_upx=72.0, left_upy=138.93801879882812,right_downx=255.33587646484375, right_downy=181.32969665527344
+text='\x0b6.2 The Main Window '
+rc=21.041677951812744
+make_paragraph self.right_down.y=166.13385772705078
+while rc=21.041677951812744 
+while verify height add_right_down_y=15.195838928222656 self.left_up.y + add_right_down_y=154.13385772705078
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=138.93801879882812 *** self.right_down.x=255.33587646484375 *** self.right_down.y=166.13385772705078 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=15.195838928222656
+**** ** ****** self.left_up.y + add_right_down_y=154.13385772705078
+add_right_down_y=-5.845839023590088
+make_paragraph self.right_down.y=166.13385772705078
+make_rect left_upx=72.0, left_upy=138.93801879882812,right_downx=255.33587646484375, right_downy=160.2880187034607
+text='\x0b6.2 The Main Window '
+rc=0
+make_paragraph self.right_down.y=166.13385772705078
+while rc=0 
+counted add_right_down_y=-5.845839023590088  self.param["bbox"][3] - self.param["bbox"][1]=27.195838928222656 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 138.93801879882812) self.right_down=Point(255.33587646484375, 166.13385772705078)
+MakePDF func start next param
+self.left_up.x=35.0 *** self.left_up.y=162.15798950195312 *** self.right_down.x=587.0 *** self.right_down.y=174.15798950195312 
+before while rc=12
+g={'size': 20.15999984741211, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': '*ru-ru-ru*', 'origin': (72.0, 146.16000366210938), 'bbox': (35.0, 153.4176025390625, 587.0, 165.4176025390625), 'text_ru': 'Студия, которая не может быть спланирована и адаптирована к вашим конкретным потребностям. Меню Настроить также включает опцию проверить, имеются ли обновления в студии Android для загрузки.'}
+before while add_right_down_y=12.0
+while verify height add_right_down_y=12.0 self.left_up.y + add_right_down_y=174.15798950195312
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=162.15798950195312 *** self.right_down.x=587.0 *** self.right_down.y=174.15798950195312 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=12.0
+**** ** ****** self.left_up.y + add_right_down_y=174.15798950195312
+add_right_down_y=0.0
+make_paragraph self.right_down.y=174.15798950195312
+make_rect left_upx=35.0, left_upy=162.15798950195312,right_downx=587.0, right_downy=174.15798950195312
+text='\x0bСтудия, которая не может быть спланирована и адаптирована к вашим конкретным потребностям. Меню Настроить также включает опцию проверить, имеются ли обновления в студии Android для загрузки.'
+rc=-21.34999978542328
+make_paragraph self.right_down.y=174.15798950195312
+while rc=-21.34999978542328 
+while verify height add_right_down_y=0.0 self.left_up.y + add_right_down_y=162.15798950195312
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=162.15798950195312 *** self.right_down.x=587.0 *** self.right_down.y=174.15798950195312 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=0.0
+**** ** ****** self.left_up.y + add_right_down_y=162.15798950195312
+add_right_down_y=21.34999978542328
+make_paragraph self.right_down.y=174.15798950195312
+make_rect left_upx=35.0, left_upy=162.15798950195312,right_downx=587.0, right_downy=195.5079892873764
+text='\x0bСтудия, которая не может быть спланирована и адаптирована к вашим конкретным потребностям. Меню Настроить также включает опцию проверить, имеются ли обновления в студии Android для загрузки.'
+rc=0
+make_paragraph self.right_down.y=174.15798950195312
+while rc=0 
+counted add_right_down_y=21.34999978542328  self.param["bbox"][3] - self.param["bbox"][1]=12.0 
+ self.offset=0.0
+after while self.left_up=Point(35.0, 162.15798950195312) self.right_down=Point(587.0, 174.15798950195312)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=196.59799194335938 *** self.right_down.x=539.4239501953125 *** self.right_down.y=216.0236053466797 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'When a new project is created, or an existing one opened, the Android Studio ', 'origin': (72.0, 167.760009765625), 'bbox': (72.0, 153.51840209960938, 539.4239501953125, 172.9440155029297)}
+before while add_right_down_y=19.425613403320312
+while verify height add_right_down_y=19.425613403320312 self.left_up.y + add_right_down_y=216.0236053466797
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=196.59799194335938 *** self.right_down.x=539.4239501953125 *** self.right_down.y=216.0236053466797 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.425613403320312
+**** ** ****** self.left_up.y + add_right_down_y=216.0236053466797
+add_right_down_y=7.4256134033203125
+make_paragraph self.right_down.y=216.0236053466797
+make_rect left_upx=72.0, left_upy=196.59799194335938,right_downx=539.4239501953125, right_downy=223.44921875
+text='\x0bWhen a new project is created, or an existing one opened, the Android Studio '
+rc=5.501226902008057
+make_paragraph self.right_down.y=216.0236053466797
+while rc=5.501226902008057 
+while verify height add_right_down_y=7.4256134033203125 self.left_up.y + add_right_down_y=204.0236053466797
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=196.59799194335938 *** self.right_down.x=539.4239501953125 *** self.right_down.y=216.0236053466797 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.4256134033203125
+**** ** ****** self.left_up.y + add_right_down_y=204.0236053466797
+add_right_down_y=1.9243865013122559
+make_paragraph self.right_down.y=216.0236053466797
+make_rect left_upx=72.0, left_upy=196.59799194335938,right_downx=539.4239501953125, right_downy=217.94799184799194
+text='\x0bWhen a new project is created, or an existing one opened, the Android Studio '
+rc=0
+make_paragraph self.right_down.y=216.0236053466797
+while rc=0 
+counted add_right_down_y=1.9243865013122559  self.param["bbox"][3] - self.param["bbox"][1]=19.425613403320312 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 196.59799194335938) self.right_down=Point(539.4239501953125, 216.0236053466797)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=219.81802368164062 *** self.right_down.x=539.9495849609375 *** self.right_down.y=239.4308319091797 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 6, 'font': 'MinionPro-It', 'color': 0, 'ascender': 1.0019999742507935, 'descender': -0.36000001430511475, 'text': 'main window  will appear. When multiple projects are open simultaneously, each ', 'origin': (72.0, 185.04000854492188), 'bbox': (72.0, 170.6112060546875, 539.9495849609375, 190.22401428222656)}
+before while add_right_down_y=19.612808227539062
+while verify height add_right_down_y=19.612808227539062 self.left_up.y + add_right_down_y=239.4308319091797
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=219.81802368164062 *** self.right_down.x=539.9495849609375 *** self.right_down.y=239.4308319091797 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.612808227539062
+**** ** ****** self.left_up.y + add_right_down_y=239.4308319091797
+add_right_down_y=7.6128082275390625
+make_paragraph self.right_down.y=239.4308319091797
+make_rect left_upx=72.0, left_upy=219.81802368164062,right_downx=539.9495849609375, right_downy=247.04364013671875
+text='\x0bmain window  will appear. When multiple projects are open simultaneously, each '
+rc=5.875616550445557
+make_paragraph self.right_down.y=239.4308319091797
+while rc=5.875616550445557 
+while verify height add_right_down_y=7.6128082275390625 self.left_up.y + add_right_down_y=227.4308319091797
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=219.81802368164062 *** self.right_down.x=539.9495849609375 *** self.right_down.y=239.4308319091797 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.6128082275390625
+**** ** ****** self.left_up.y + add_right_down_y=227.4308319091797
+add_right_down_y=1.7371916770935059
+make_paragraph self.right_down.y=239.4308319091797
+make_rect left_upx=72.0, left_upy=219.81802368164062,right_downx=539.9495849609375, right_downy=241.1680235862732
+text='\x0bmain window  will appear. When multiple projects are open simultaneously, each '
+rc=0
+make_paragraph self.right_down.y=239.4308319091797
+while rc=0 
+counted add_right_down_y=1.7371916770935059  self.param["bbox"][3] - self.param["bbox"][1]=19.612808227539062 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 219.81802368164062) self.right_down=Point(539.9495849609375, 239.4308319091797)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=243.03799438476562 *** self.right_down.x=539.3115234375 *** self.right_down.y=262.46360778808594 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'will be assigned its own main window. The precise configuration of the window ', 'origin': (72.0, 202.32000732421875), 'bbox': (72.0, 188.07839965820312, 539.3115234375, 207.50401306152344)}
+before while add_right_down_y=19.425613403320312
+while verify height add_right_down_y=19.425613403320312 self.left_up.y + add_right_down_y=262.46360778808594
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=243.03799438476562 *** self.right_down.x=539.3115234375 *** self.right_down.y=262.46360778808594 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.425613403320312
+**** ** ****** self.left_up.y + add_right_down_y=262.46360778808594
+add_right_down_y=7.4256134033203125
+make_paragraph self.right_down.y=262.46360778808594
+make_rect left_upx=72.0, left_upy=243.03799438476562,right_downx=539.3115234375, right_downy=269.88922119140625
+text='\x0bwill be assigned its own main window. The precise configuration of the window '
+rc=5.501226902008057
+make_paragraph self.right_down.y=262.46360778808594
+while rc=5.501226902008057 
+while verify height add_right_down_y=7.4256134033203125 self.left_up.y + add_right_down_y=250.46360778808594
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=243.03799438476562 *** self.right_down.x=539.3115234375 *** self.right_down.y=262.46360778808594 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.4256134033203125
+**** ** ****** self.left_up.y + add_right_down_y=250.46360778808594
+add_right_down_y=1.9243865013122559
+make_paragraph self.right_down.y=262.46360778808594
+make_rect left_upx=72.0, left_upy=243.03799438476562,right_downx=539.3115234375, right_downy=264.3879942893982
+text='\x0bwill be assigned its own main window. The precise configuration of the window '
+rc=0
+make_paragraph self.right_down.y=262.46360778808594
+while rc=0 
+counted add_right_down_y=1.9243865013122559  self.param["bbox"][3] - self.param["bbox"][1]=19.425613403320312 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 243.03799438476562) self.right_down=Point(539.3115234375, 262.46360778808594)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=266.2579650878906 *** self.right_down.x=539.7750244140625 *** self.right_down.y=285.68357849121094 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'will vary depending on which tools and panels were displayed the last time the ', 'origin': (72.0, 219.60000610351562), 'bbox': (72.0, 205.3583984375, 539.7750244140625, 224.7840118408203)}
+before while add_right_down_y=19.425613403320312
+while verify height add_right_down_y=19.425613403320312 self.left_up.y + add_right_down_y=285.68357849121094
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=266.2579650878906 *** self.right_down.x=539.7750244140625 *** self.right_down.y=285.68357849121094 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.425613403320312
+**** ** ****** self.left_up.y + add_right_down_y=285.68357849121094
+add_right_down_y=7.4256134033203125
+make_paragraph self.right_down.y=285.68357849121094
+make_rect left_upx=72.0, left_upy=266.2579650878906,right_downx=539.7750244140625, right_downy=293.10919189453125
+text='\x0bwill vary depending on which tools and panels were displayed the last time the '
+rc=5.501226902008057
+make_paragraph self.right_down.y=285.68357849121094
+while rc=5.501226902008057 
+while verify height add_right_down_y=7.4256134033203125 self.left_up.y + add_right_down_y=273.68357849121094
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=266.2579650878906 *** self.right_down.x=539.7750244140625 *** self.right_down.y=285.68357849121094 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.4256134033203125
+**** ** ****** self.left_up.y + add_right_down_y=273.68357849121094
+add_right_down_y=1.9243865013122559
+make_paragraph self.right_down.y=285.68357849121094
+make_rect left_upx=72.0, left_upy=266.2579650878906,right_downx=539.7750244140625, right_downy=287.6079649925232
+text='\x0bwill vary depending on which tools and panels were displayed the last time the '
+rc=0
+make_paragraph self.right_down.y=285.68357849121094
+while rc=0 
+counted add_right_down_y=1.9243865013122559  self.param["bbox"][3] - self.param["bbox"][1]=19.425613403320312 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 266.2579650878906) self.right_down=Point(539.7750244140625, 285.68357849121094)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=289.4779968261719 *** self.right_down.x=429.9006652832031 *** self.right_down.y=308.9036102294922 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'project was open, but will typically resemble that of  Figure 6-2 .', 'origin': (72.0, 236.8800048828125), 'bbox': (72.0, 222.63839721679688, 429.9006652832031, 242.0640106201172)}
+before while add_right_down_y=19.425613403320312
+while verify height add_right_down_y=19.425613403320312 self.left_up.y + add_right_down_y=308.9036102294922
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=289.4779968261719 *** self.right_down.x=429.9006652832031 *** self.right_down.y=308.9036102294922 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.425613403320312
+**** ** ****** self.left_up.y + add_right_down_y=308.9036102294922
+add_right_down_y=7.4256134033203125
+make_paragraph self.right_down.y=308.9036102294922
+make_rect left_upx=72.0, left_upy=289.4779968261719,right_downx=429.9006652832031, right_downy=316.3292236328125
+text='\x0bproject was open, but will typically resemble that of  Figure 6-2 .'
+rc=5.501226902008057
+make_paragraph self.right_down.y=308.9036102294922
+while rc=5.501226902008057 
+while verify height add_right_down_y=7.4256134033203125 self.left_up.y + add_right_down_y=296.9036102294922
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=289.4779968261719 *** self.right_down.x=429.9006652832031 *** self.right_down.y=308.9036102294922 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.4256134033203125
+**** ** ****** self.left_up.y + add_right_down_y=296.9036102294922
+add_right_down_y=1.9243865013122559
+make_paragraph self.right_down.y=308.9036102294922
+make_rect left_upx=72.0, left_upy=289.4779968261719,right_downx=429.9006652832031, right_downy=310.82799673080444
+text='\x0bproject was open, but will typically resemble that of  Figure 6-2 .'
+rc=0
+make_paragraph self.right_down.y=308.9036102294922
+while rc=0 
+counted add_right_down_y=1.9243865013122559  self.param["bbox"][3] - self.param["bbox"][1]=19.425613403320312 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 289.4779968261719) self.right_down=Point(429.9006652832031, 308.9036102294922)
+MakePDF func start next param
+self.left_up.x=35.0 *** self.left_up.y=312.697998046875 *** self.right_down.x=587.0 *** self.right_down.y=324.697998046875 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 237, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': '*ru-ru-ru*', 'origin': (370.4061584472656, 236.8800048828125), 'bbox': (35.0, 242.0640106201172, 587.0, 254.0640106201172), 'text_ru': 'При создании нового или открытии существующего основного окна студии &quot; Андроид &quot; появится. При одновременном открытии нескольких проектов каждому из них будет присвоено собственное основное окно. Точная конфигурация окна будет варьироваться в зависимости от того, какие инструменты и панели были показаны в последний раз, когда проект был открыт, но, как правило, будет похожа на рис. 6-2.'}
+before while add_right_down_y=12.0
+while verify height add_right_down_y=12.0 self.left_up.y + add_right_down_y=324.697998046875
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=312.697998046875 *** self.right_down.x=587.0 *** self.right_down.y=324.697998046875 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=12.0
+**** ** ****** self.left_up.y + add_right_down_y=324.697998046875
+add_right_down_y=0.0
+make_paragraph self.right_down.y=324.697998046875
+make_rect left_upx=35.0, left_upy=312.697998046875,right_downx=587.0, right_downy=324.697998046875
+text='\x0bПри создании нового или открытии существующего основного окна студии &quot; Андроид &quot; появится. При одновременном открытии нескольких проектов каждому из них будет присвоено собственное основное окно. Точная конфигурация окна будет варьироваться в зависимости от того, какие инструменты и панели были показаны в последний раз, когда проект был открыт, но, как правило, будет похожа на рис. 6-2.'
+rc=-45.3499995470047
+make_paragraph self.right_down.y=324.697998046875
+while rc=-45.3499995470047 
+while verify height add_right_down_y=0.0 self.left_up.y + add_right_down_y=312.697998046875
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=312.697998046875 *** self.right_down.x=587.0 *** self.right_down.y=324.697998046875 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=0.0
+**** ** ****** self.left_up.y + add_right_down_y=312.697998046875
+add_right_down_y=45.3499995470047
+make_paragraph self.right_down.y=324.697998046875
+make_rect left_upx=35.0, left_upy=312.697998046875,right_downx=587.0, right_downy=370.0479975938797
+text='\x0bПри создании нового или открытии существующего основного окна студии &quot; Андроид &quot; появится. При одновременном открытии нескольких проектов каждому из них будет присвоено собственное основное окно. Точная конфигурация окна будет варьироваться в зависимости от того, какие инструменты и панели были показаны в последний раз, когда проект был открыт, но, как правило, будет похожа на рис. 6-2.'
+rc=0
+make_paragraph self.right_down.y=324.697998046875
+while rc=0 
+counted add_right_down_y=45.3499995470047  self.param["bbox"][3] - self.param["bbox"][1]=12.0 
+ self.offset=0.0
+after while self.left_up=Point(35.0, 312.697998046875) self.right_down=Point(587.0, 324.697998046875)
+MakePDF func start next param
+self.left_up.x=114.47998046875 *** self.left_up.y=369.5780029296875 *** self.right_down.x=497.5199890136719 *** self.right_down.y=602.1380157470703 
+before while rc=12
+g={'type': 1, 'bbox': (114.47998046875, 245.52000427246094, 497.5199890136719, 478.08001708984375), 'width': 1505, 'height': 912, 'ext': 'jpeg', 'colorspace': 3, 'xres': 96, 'yres': 96, 'bpc': 8, 'transform': (383.0400085449219, 0.0, -0.0, 232.5600128173828, 114.47998046875, 245.52000427246094), 'size': 221998}
+self.left_up.x=114.47998046875 *** self.left_up.y=369.5780029296875 *** self.right_down.x=497.5199890136719 *** self.right_down.y=602.1380157470703 
+make_rect left_upx=114.47998046875, left_upy=369.5780029296875,right_downx=497.5199890136719, right_downy=602.1380157470703
+MakePDF func start next param
+self.left_up.x=276.2549743652344 *** self.left_up.y=602.1380004882812 *** self.right_down.x=335.7494812011719 *** self.right_down.y=621.5635986328125 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'Figure 6-2 ', 'origin': (276.2549743652344, 492.4800109863281), 'bbox': (276.2549743652344, 478.2384033203125, 335.7494812011719, 497.66400146484375)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=621.5635986328125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=276.2549743652344 *** self.left_up.y=602.1380004882812 *** self.right_down.x=335.7494812011719 *** self.right_down.y=621.5635986328125 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=621.5635986328125
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=621.5635986328125
+make_rect left_upx=276.2549743652344, left_upy=602.1380004882812,right_downx=335.7494812011719, right_downy=628.9891967773438
+text='\x0bFigure 6-2 '
+rc=5.501196384429932
+make_paragraph self.right_down.y=621.5635986328125
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=609.5635986328125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=276.2549743652344 *** self.left_up.y=602.1380004882812 *** self.right_down.x=335.7494812011719 *** self.right_down.y=621.5635986328125 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=609.5635986328125
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=621.5635986328125
+make_rect left_upx=276.2549743652344, left_upy=602.1380004882812,right_downx=335.7494812011719, right_downy=623.4880003929138
+text='\x0bFigure 6-2 '
+rc=0
+make_paragraph self.right_down.y=621.5635986328125
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(276.2549743652344, 602.1380004882812) self.right_down=Point(335.7494812011719, 621.5635986328125)
+MakePDF func start next param
+self.left_up.x=35.0 *** self.left_up.y=625.3580322265625 *** self.right_down.x=587.0 *** self.right_down.y=637.3580322265625 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': '*ru-ru-ru*', 'origin': (276.2549743652344, 492.4800109863281), 'bbox': (35.0, 497.66400146484375, 587.0, 509.66400146484375), 'text_ru': 'Рисунок 6-2'}
+before while add_right_down_y=12.0
+while verify height add_right_down_y=12.0 self.left_up.y + add_right_down_y=637.3580322265625
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=625.3580322265625 *** self.right_down.x=587.0 *** self.right_down.y=637.3580322265625 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=12.0
+**** ** ****** self.left_up.y + add_right_down_y=637.3580322265625
+add_right_down_y=0.0
+make_paragraph self.right_down.y=637.3580322265625
+make_rect left_upx=35.0, left_upy=625.3580322265625,right_downx=587.0, right_downy=637.3580322265625
+text='\x0bРисунок 6-2'
+rc=-9.349999904632568
+make_paragraph self.right_down.y=637.3580322265625
+while rc=-9.349999904632568 
+while verify height add_right_down_y=0.0 self.left_up.y + add_right_down_y=625.3580322265625
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=625.3580322265625 *** self.right_down.x=587.0 *** self.right_down.y=637.3580322265625 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=0.0
+**** ** ****** self.left_up.y + add_right_down_y=625.3580322265625
+add_right_down_y=9.349999904632568
+make_paragraph self.right_down.y=637.3580322265625
+make_rect left_upx=35.0, left_upy=625.3580322265625,right_downx=587.0, right_downy=646.7080321311951
+text='\x0bРисунок 6-2'
+rc=0
+make_paragraph self.right_down.y=637.3580322265625
+while rc=0 
+counted add_right_down_y=9.349999904632568  self.param["bbox"][3] - self.param["bbox"][1]=12.0 
+ self.offset=0.0
+after while self.left_up=Point(35.0, 625.3580322265625) self.right_down=Point(587.0, 637.3580322265625)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=648.5780029296875 *** self.right_down.x=491.8594665527344 *** self.right_down.y=668.0036315917969 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'The various elements of the main window can be summarized as follows: ', 'origin': (72.0, 512.6400146484375), 'bbox': (72.0, 498.3984069824219, 491.8594665527344, 517.8240356445312)}
+before while add_right_down_y=19.425628662109375
+while verify height add_right_down_y=19.425628662109375 self.left_up.y + add_right_down_y=668.0036315917969
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=648.5780029296875 *** self.right_down.x=491.8594665527344 *** self.right_down.y=668.0036315917969 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.425628662109375
+**** ** ****** self.left_up.y + add_right_down_y=668.0036315917969
+add_right_down_y=7.425628662109375
+make_paragraph self.right_down.y=668.0036315917969
+make_rect left_upx=72.0, left_upy=648.5780029296875,right_downx=491.8594665527344, right_downy=675.4292602539062
+text='\x0bThe various elements of the main window can be summarized as follows: '
+rc=5.501257419586182
+make_paragraph self.right_down.y=668.0036315917969
+while rc=5.501257419586182 
+while verify height add_right_down_y=7.425628662109375 self.left_up.y + add_right_down_y=656.0036315917969
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=648.5780029296875 *** self.right_down.x=491.8594665527344 *** self.right_down.y=668.0036315917969 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.425628662109375
+**** ** ****** self.left_up.y + add_right_down_y=656.0036315917969
+add_right_down_y=1.9243712425231934
+make_paragraph self.right_down.y=668.0036315917969
+make_rect left_upx=72.0, left_upy=648.5780029296875,right_downx=491.8594665527344, right_downy=669.9280028343201
+text='\x0bThe various elements of the main window can be summarized as follows: '
+rc=0
+make_paragraph self.right_down.y=668.0036315917969
+while rc=0 
+counted add_right_down_y=1.9243712425231934  self.param["bbox"][3] - self.param["bbox"][1]=19.425628662109375 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 648.5780029296875) self.right_down=Point(491.8594665527344, 668.0036315917969)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=671.7980346679688 *** self.right_down.x=539.42626953125 *** self.right_down.y=691.7276611328125 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 20, 'font': 'MinionPro-Bold', 'color': 0, 'ascender': 1.0240000486373901, 'descender': -0.36000001430511475, 'text': 'A – Menu Bar   –  Contains  a  range  of  menus  for  performing  tasks  within  the ', 'origin': (72.0, 532.800048828125), 'bbox': (72.0, 518.054443359375, 539.42626953125, 537.9840698242188)}
+before while add_right_down_y=19.92962646484375
+while verify height add_right_down_y=19.92962646484375 self.left_up.y + add_right_down_y=691.7276611328125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=671.7980346679688 *** self.right_down.x=539.42626953125 *** self.right_down.y=691.7276611328125 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.92962646484375
+**** ** ****** self.left_up.y + add_right_down_y=691.7276611328125
+add_right_down_y=7.92962646484375
+make_paragraph self.right_down.y=691.7276611328125
+make_rect left_upx=72.0, left_upy=671.7980346679688,right_downx=539.42626953125, right_downy=699.6572875976562
+text='\x0bA – Menu Bar   –  Contains  a  range  of  menus  for  performing  tasks  within  the '
+rc=6.509253025054932
+make_paragraph self.right_down.y=691.7276611328125
+while rc=6.509253025054932 
+while verify height add_right_down_y=7.92962646484375 self.left_up.y + add_right_down_y=679.7276611328125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=671.7980346679688 *** self.right_down.x=539.42626953125 *** self.right_down.y=691.7276611328125 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.92962646484375
+**** ** ****** self.left_up.y + add_right_down_y=679.7276611328125
+add_right_down_y=1.4203734397888184
+make_paragraph self.right_down.y=691.7276611328125
+make_rect left_upx=72.0, left_upy=671.7980346679688,right_downx=539.42626953125, right_downy=693.1480345726013
+text='\x0bA – Menu Bar   –  Contains  a  range  of  menus  for  performing  tasks  within  the '
+rc=0
+make_paragraph self.right_down.y=691.7276611328125
+while rc=0 
+counted add_right_down_y=1.4203734397888184  self.param["bbox"][3] - self.param["bbox"][1]=19.92962646484375 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 671.7980346679688) self.right_down=Point(539.42626953125, 691.7276611328125)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=695.0180053710938 *** self.right_down.x=244.17947387695312 *** self.right_down.y=714.443603515625 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'Android Studio environment. ', 'origin': (72.0, 550.0800170898438), 'bbox': (72.0, 535.8384399414062, 244.17947387695312, 555.2640380859375)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=714.443603515625
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=695.0180053710938 *** self.right_down.x=244.17947387695312 *** self.right_down.y=714.443603515625 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=714.443603515625
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=714.443603515625
+make_rect left_upx=72.0, left_upy=695.0180053710938,right_downx=244.17947387695312, right_downy=721.8692016601562
+text='\x0bAndroid Studio environment. '
+rc=5.501196384429932
+make_paragraph self.right_down.y=714.443603515625
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=702.443603515625
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=695.0180053710938 *** self.right_down.x=244.17947387695312 *** self.right_down.y=714.443603515625 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=702.443603515625
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=714.443603515625
+make_rect left_upx=72.0, left_upy=695.0180053710938,right_downx=244.17947387695312, right_downy=716.3680052757263
+text='\x0bAndroid Studio environment. '
+rc=0
+make_paragraph self.right_down.y=714.443603515625
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 695.0180053710938) self.right_down=Point(244.17947387695312, 714.443603515625)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=718.238037109375 *** self.right_down.x=539.44873046875 *** self.right_down.y=738.1676635742188 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 20, 'font': 'MinionPro-Bold', 'color': 0, 'ascender': 1.0240000486373901, 'descender': -0.36000001430511475, 'text': 'B  –  Toolbar   –  A  selection  of  shortcuts  to  frequently  performed  actions.  The ', 'origin': (72.0, 570.2400512695312), 'bbox': (72.0, 555.4944458007812, 539.44873046875, 575.424072265625)}
+before while add_right_down_y=19.92962646484375
+while verify height add_right_down_y=19.92962646484375 self.left_up.y + add_right_down_y=738.1676635742188
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=718.238037109375 *** self.right_down.x=539.44873046875 *** self.right_down.y=738.1676635742188 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.92962646484375
+**** ** ****** self.left_up.y + add_right_down_y=738.1676635742188
+add_right_down_y=7.92962646484375
+make_paragraph self.right_down.y=738.1676635742188
+make_rect left_upx=72.0, left_upy=718.238037109375,right_downx=539.44873046875, right_downy=746.0972900390625
+text='\x0bB  –  Toolbar   –  A  selection  of  shortcuts  to  frequently  performed  actions.  The '
+rc=6.509253025054932
+make_paragraph self.right_down.y=738.1676635742188
+while rc=6.509253025054932 
+while verify height add_right_down_y=7.92962646484375 self.left_up.y + add_right_down_y=726.1676635742188
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=718.238037109375 *** self.right_down.x=539.44873046875 *** self.right_down.y=738.1676635742188 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.92962646484375
+**** ** ****** self.left_up.y + add_right_down_y=726.1676635742188
+add_right_down_y=1.4203734397888184
+make_paragraph self.right_down.y=738.1676635742188
+make_rect left_upx=72.0, left_upy=718.238037109375,right_downx=539.44873046875, right_downy=739.5880370140076
+text='\x0bB  –  Toolbar   –  A  selection  of  shortcuts  to  frequently  performed  actions.  The '
+rc=0
+make_paragraph self.right_down.y=738.1676635742188
+while rc=0 
+counted add_right_down_y=1.4203734397888184  self.param["bbox"][3] - self.param["bbox"][1]=19.92962646484375 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 718.238037109375) self.right_down=Point(539.44873046875, 738.1676635742188)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=741.4580078125 *** self.right_down.x=539.3363037109375 *** self.right_down.y=760.8836059570312 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'toolbar buttons provide quicker access to a select group of menu bar actions. The ', 'origin': (72.0, 587.52001953125), 'bbox': (72.0, 573.2784423828125, 539.3363037109375, 592.7040405273438)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=760.8836059570312
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=741.4580078125 *** self.right_down.x=539.3363037109375 *** self.right_down.y=760.8836059570312 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=760.8836059570312
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=760.8836059570312
+make_rect left_upx=72.0, left_upy=741.4580078125,right_downx=539.3363037109375, right_downy=768.3092041015625
+text='\x0btoolbar buttons provide quicker access to a select group of menu bar actions. The '
+rc=5.501196384429932
+make_paragraph self.right_down.y=760.8836059570312
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=748.8836059570312
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=741.4580078125 *** self.right_down.x=539.3363037109375 *** self.right_down.y=760.8836059570312 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=748.8836059570312
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=760.8836059570312
+make_rect left_upx=72.0, left_upy=741.4580078125,right_downx=539.3363037109375, right_downy=762.8080077171326
+text='\x0btoolbar buttons provide quicker access to a select group of menu bar actions. The '
+rc=0
+make_paragraph self.right_down.y=760.8836059570312
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 741.4580078125) self.right_down=Point(539.3363037109375, 760.8836059570312)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=764.6780395507812 *** self.right_down.x=539.4825439453125 *** self.right_down.y=784.1036376953125 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'toolbar  can  be  customized  by  right-clicking  on  the  bar  and  selecting  the ', 'origin': (72.0, 604.800048828125), 'bbox': (72.0, 590.5584716796875, 539.4825439453125, 609.9840698242188)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=784.1036376953125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=764.6780395507812 *** self.right_down.x=539.4825439453125 *** self.right_down.y=784.1036376953125 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=784.1036376953125
+function nnew_page
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=609.9840698242188
+make_rect left_upx=72.0, left_upy=590.5584716796875,right_downx=539.4825439453125, right_downy=617.40966796875
+text='\x0btoolbar  can  be  customized  by  right-clicking  on  the  bar  and  selecting  the '
+rc=5.501196384429932
+make_paragraph self.right_down.y=609.9840698242188
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=597.9840698242188
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=590.5584716796875 *** self.right_down.x=539.4825439453125 *** self.right_down.y=609.9840698242188 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=597.9840698242188
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=609.9840698242188
+make_rect left_upx=72.0, left_upy=590.5584716796875,right_downx=539.4825439453125, right_downy=611.9084715843201
+text='\x0btoolbar  can  be  customized  by  right-clicking  on  the  bar  and  selecting  the '
+rc=0
+make_paragraph self.right_down.y=609.9840698242188
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 590.5584716796875) self.right_down=Point(539.4825439453125, 609.9840698242188)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=613.7780151367188 *** self.right_down.x=539.7767944335938 *** self.right_down.y=633.3908081054688 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 6, 'font': 'MinionPro-It', 'color': 0, 'ascender': 1.0019999742507935, 'descender': -0.36000001430511475, 'text': 'Customize Menus and Toolbars…  menu option. If the toolbar is not visible, it can ', 'origin': (72.0, 622.0800170898438), 'bbox': (72.0, 607.6512451171875, 539.7767944335938, 627.2640380859375)}
+before while add_right_down_y=19.61279296875
+while verify height add_right_down_y=19.61279296875 self.left_up.y + add_right_down_y=633.3908081054688
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=613.7780151367188 *** self.right_down.x=539.7767944335938 *** self.right_down.y=633.3908081054688 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.61279296875
+**** ** ****** self.left_up.y + add_right_down_y=633.3908081054688
+add_right_down_y=7.61279296875
+make_paragraph self.right_down.y=633.3908081054688
+make_rect left_upx=72.0, left_upy=613.7780151367188,right_downx=539.7767944335938, right_downy=641.0036010742188
+text='\x0bCustomize Menus and Toolbars…  menu option. If the toolbar is not visible, it can '
+rc=5.875586032867432
+make_paragraph self.right_down.y=633.3908081054688
+while rc=5.875586032867432 
+while verify height add_right_down_y=7.61279296875 self.left_up.y + add_right_down_y=621.3908081054688
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=613.7780151367188 *** self.right_down.x=539.7767944335938 *** self.right_down.y=633.3908081054688 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.61279296875
+**** ** ****** self.left_up.y + add_right_down_y=621.3908081054688
+add_right_down_y=1.7372069358825684
+make_paragraph self.right_down.y=633.3908081054688
+make_rect left_upx=72.0, left_upy=613.7780151367188,right_downx=539.7767944335938, right_downy=635.1280150413513
+text='\x0bCustomize Menus and Toolbars…  menu option. If the toolbar is not visible, it can '
+rc=0
+make_paragraph self.right_down.y=633.3908081054688
+while rc=0 
+counted add_right_down_y=1.7372069358825684  self.param["bbox"][3] - self.param["bbox"][1]=19.61279296875 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 613.7780151367188) self.right_down=Point(539.7767944335938, 633.3908081054688)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=636.998046875 *** self.right_down.x=465.7933044433594 *** self.right_down.y=656.4236450195312 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'be displayed using the  View -> Appearance -> Toolbar  menu option. ', 'origin': (72.0, 639.3600463867188), 'bbox': (72.0, 625.1184692382812, 465.7933044433594, 644.5440673828125)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=656.4236450195312
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=636.998046875 *** self.right_down.x=465.7933044433594 *** self.right_down.y=656.4236450195312 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=656.4236450195312
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=656.4236450195312
+make_rect left_upx=72.0, left_upy=636.998046875,right_downx=465.7933044433594, right_downy=663.8492431640625
+text='\x0bbe displayed using the  View -> Appearance -> Toolbar  menu option. '
+rc=5.501196384429932
+make_paragraph self.right_down.y=656.4236450195312
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=644.4236450195312
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=636.998046875 *** self.right_down.x=465.7933044433594 *** self.right_down.y=656.4236450195312 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=644.4236450195312
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=656.4236450195312
+make_rect left_upx=72.0, left_upy=636.998046875,right_downx=465.7933044433594, right_downy=658.3480467796326
+text='\x0bbe displayed using the  View -> Appearance -> Toolbar  menu option. '
+rc=0
+make_paragraph self.right_down.y=656.4236450195312
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 636.998046875) self.right_down=Point(465.7933044433594, 656.4236450195312)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=660.218017578125 *** self.right_down.x=539.572509765625 *** self.right_down.y=680.1476440429688 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 20, 'font': 'MinionPro-Bold', 'color': 0, 'ascender': 1.0240000486373901, 'descender': -0.36000001430511475, 'text': 'C – Navigation Bar  – The navigation bar provides a convenient way to move ', 'origin': (72.0, 659.52001953125), 'bbox': (72.0, 644.7744140625, 539.572509765625, 664.7040405273438)}
+before while add_right_down_y=19.92962646484375
+while verify height add_right_down_y=19.92962646484375 self.left_up.y + add_right_down_y=680.1476440429688
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=660.218017578125 *** self.right_down.x=539.572509765625 *** self.right_down.y=680.1476440429688 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.92962646484375
+**** ** ****** self.left_up.y + add_right_down_y=680.1476440429688
+add_right_down_y=7.92962646484375
+make_paragraph self.right_down.y=680.1476440429688
+make_rect left_upx=72.0, left_upy=660.218017578125,right_downx=539.572509765625, right_downy=688.0772705078125
+text='\x0bC – Navigation Bar  – The navigation bar provides a convenient way to move '
+rc=6.509253025054932
+make_paragraph self.right_down.y=680.1476440429688
+while rc=6.509253025054932 
+while verify height add_right_down_y=7.92962646484375 self.left_up.y + add_right_down_y=668.1476440429688
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=660.218017578125 *** self.right_down.x=539.572509765625 *** self.right_down.y=680.1476440429688 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.92962646484375
+**** ** ****** self.left_up.y + add_right_down_y=668.1476440429688
+add_right_down_y=1.4203734397888184
+make_paragraph self.right_down.y=680.1476440429688
+make_rect left_upx=72.0, left_upy=660.218017578125,right_downx=539.572509765625, right_downy=681.5680174827576
+text='\x0bC – Navigation Bar  – The navigation bar provides a convenient way to move '
+rc=0
+make_paragraph self.right_down.y=680.1476440429688
+while rc=0 
+counted add_right_down_y=1.4203734397888184  self.param["bbox"][3] - self.param["bbox"][1]=19.92962646484375 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 660.218017578125) self.right_down=Point(539.572509765625, 680.1476440429688)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=683.4380493164062 *** self.right_down.x=539.5742797851562 *** self.right_down.y=702.8636474609375 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'around the files and folders that make up the project. Clicking on an element in ', 'origin': (72.0, 676.800048828125), 'bbox': (72.0, 662.5584716796875, 539.5742797851562, 681.9840698242188)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=702.8636474609375
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=683.4380493164062 *** self.right_down.x=539.5742797851562 *** self.right_down.y=702.8636474609375 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=702.8636474609375
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=702.8636474609375
+make_rect left_upx=72.0, left_upy=683.4380493164062,right_downx=539.5742797851562, right_downy=710.2892456054688
+text='\x0baround the files and folders that make up the project. Clicking on an element in '
+rc=5.501196384429932
+make_paragraph self.right_down.y=702.8636474609375
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=690.8636474609375
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=683.4380493164062 *** self.right_down.x=539.5742797851562 *** self.right_down.y=702.8636474609375 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=690.8636474609375
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=702.8636474609375
+make_rect left_upx=72.0, left_upy=683.4380493164062,right_downx=539.5742797851562, right_downy=704.7880492210388
+text='\x0baround the files and folders that make up the project. Clicking on an element in '
+rc=0
+make_paragraph self.right_down.y=702.8636474609375
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 683.4380493164062) self.right_down=Point(539.5742797851562, 702.8636474609375)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=706.6580200195312 *** self.right_down.x=539.9370727539062 *** self.right_down.y=726.0836181640625 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'the navigation bar will drop down a menu listing the subfolders and files at that ', 'origin': (72.0, 694.0800170898438), 'bbox': (72.0, 679.8384399414062, 539.9370727539062, 699.2640380859375)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=726.0836181640625
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=706.6580200195312 *** self.right_down.x=539.9370727539062 *** self.right_down.y=726.0836181640625 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=726.0836181640625
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=726.0836181640625
+make_rect left_upx=72.0, left_upy=706.6580200195312,right_downx=539.9370727539062, right_downy=733.5092163085938
+text='\x0bthe navigation bar will drop down a menu listing the subfolders and files at that '
+rc=5.501196384429932
+make_paragraph self.right_down.y=726.0836181640625
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=714.0836181640625
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=706.6580200195312 *** self.right_down.x=539.9370727539062 *** self.right_down.y=726.0836181640625 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=714.0836181640625
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=726.0836181640625
+make_rect left_upx=72.0, left_upy=706.6580200195312,right_downx=539.9370727539062, right_downy=728.0080199241638
+text='\x0bthe navigation bar will drop down a menu listing the subfolders and files at that '
+rc=0
+make_paragraph self.right_down.y=726.0836181640625
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 706.6580200195312) self.right_down=Point(539.9370727539062, 726.0836181640625)
+MakePDF func start next param
+self.left_up.x=72.0 *** self.left_up.y=729.8780517578125 *** self.right_down.x=539.4226684570312 *** self.right_down.y=749.3036499023438 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': 'location ready for selection. Similarly, clicking on a class name displays a menu ', 'origin': (72.0, 711.3600463867188), 'bbox': (72.0, 697.1184692382812, 539.4226684570312, 716.5440673828125)}
+before while add_right_down_y=19.42559814453125
+while verify height add_right_down_y=19.42559814453125 self.left_up.y + add_right_down_y=749.3036499023438
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=729.8780517578125 *** self.right_down.x=539.4226684570312 *** self.right_down.y=749.3036499023438 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=19.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=749.3036499023438
+add_right_down_y=7.42559814453125
+make_paragraph self.right_down.y=749.3036499023438
+make_rect left_upx=72.0, left_upy=729.8780517578125,right_downx=539.4226684570312, right_downy=756.729248046875
+text='\x0blocation ready for selection. Similarly, clicking on a class name displays a menu '
+rc=5.501196384429932
+make_paragraph self.right_down.y=749.3036499023438
+while rc=5.501196384429932 
+while verify height add_right_down_y=7.42559814453125 self.left_up.y + add_right_down_y=737.3036499023438
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=72.0 *** self.left_up.y=729.8780517578125 *** self.right_down.x=539.4226684570312 *** self.right_down.y=749.3036499023438 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=7.42559814453125
+**** ** ****** self.left_up.y + add_right_down_y=737.3036499023438
+add_right_down_y=1.9244017601013184
+make_paragraph self.right_down.y=749.3036499023438
+make_rect left_upx=72.0, left_upy=729.8780517578125,right_downx=539.4226684570312, right_downy=751.2280516624451
+text='\x0blocation ready for selection. Similarly, clicking on a class name displays a menu '
+rc=0
+make_paragraph self.right_down.y=749.3036499023438
+while rc=0 
+counted add_right_down_y=1.9244017601013184  self.param["bbox"][3] - self.param["bbox"][1]=19.42559814453125 
+ self.offset=0.0
+after while self.left_up=Point(72.0, 729.8780517578125) self.right_down=Point(539.4226684570312, 749.3036499023438)
+MakePDF func start next param
+self.left_up.x=35.0 *** self.left_up.y=753.09814453125 *** self.right_down.x=587.0 *** self.right_down.y=765.09814453125 
+before while rc=12
+g={'size': 14.40000057220459, 'flags': 4, 'font': 'MinionPro-Regular', 'color': 0, 'ascender': 0.9890000224113464, 'descender': -0.36000001430511475, 'text': '*ru-ru-ru*', 'origin': (72.0, 711.3600463867188), 'bbox': (35.0, 716.5440673828125, 587.0, 728.5440673828125), 'text_ru': 'Различные элементы главного окна можно резюмировать следующим образом: &lt; &lt; Панель меню &gt; &gt; содержит ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; включает ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; обеспечивает более быстрый доступ к выбранной группе инструментов меню. &lt; &lt; Панель инструментов &gt; &gt; может быть адаптирована путем щелчки правой кнопкой на панели и выбора меню &lt; &lt; Настройка &gt; &gt; и &lt; &lt; Настройка &gt; &gt;. Если панель инструментов не видна, то она может быть выставлена с помощью меню, в котором указаны для выбора.'}
+before while add_right_down_y=12.0
+while verify height add_right_down_y=12.0 self.left_up.y + add_right_down_y=765.09814453125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=753.09814453125 *** self.right_down.x=587.0 *** self.right_down.y=765.09814453125 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=12.0
+**** ** ****** self.left_up.y + add_right_down_y=765.09814453125
+add_right_down_y=0.0
+make_paragraph self.right_down.y=765.09814453125
+make_rect left_upx=35.0, left_upy=753.09814453125,right_downx=587.0, right_downy=765.09814453125
+text='\x0bРазличные элементы главного окна можно резюмировать следующим образом: &lt; &lt; Панель меню &gt; &gt; содержит ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; включает ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; обеспечивает более быстрый доступ к выбранной группе инструментов меню. &lt; &lt; Панель инструментов &gt; &gt; может быть адаптирована путем щелчки правой кнопкой на панели и выбора меню &lt; &lt; Настройка &gt; &gt; и &lt; &lt; Настройка &gt; &gt;. Если панель инструментов не видна, то она может быть выставлена с помощью меню, в котором указаны для выбора.'
+rc=-81.34999918937683
+make_paragraph self.right_down.y=765.09814453125
+while rc=-81.34999918937683 
+while verify height add_right_down_y=0.0 self.left_up.y + add_right_down_y=753.09814453125
+self.width_page=612.0   self.height_page=792.0
+self.left_up.x=35.0 *** self.left_up.y=753.09814453125 *** self.right_down.x=587.0 *** self.right_down.y=765.09814453125 
+ **** self.offset=0.0 ***** self.offset_last_page=0.0 **** add_right_down_y=0.0
+**** ** ****** self.left_up.y + add_right_down_y=753.09814453125
+add_right_down_y=81.34999918937683
+make_paragraph self.right_down.y=765.09814453125
+make_rect left_upx=35.0, left_upy=753.09814453125,right_downx=587.0, right_downy=846.4481437206268
+text='\x0bРазличные элементы главного окна можно резюмировать следующим образом: &lt; &lt; Панель меню &gt; &gt; содержит ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; включает ряд меню для выполнения задач в среде студии &lt; &lt; Андроид &gt; &gt;. &lt; &lt; Панель инструментов &gt; &gt; обеспечивает более быстрый доступ к выбранной группе инструментов меню. &lt; &lt; Панель инструментов &gt; &gt; может быть адаптирована путем щелчки правой кнопкой на панели и выбора меню &lt; &lt; Настройка &gt; &gt; и &lt; &lt; Настройка &gt; &gt;. Если панель инструментов не видна, то она может быть выставлена с помощью меню, в котором указаны для выбора.'
+rc=0
+make_paragraph self.right_down.y=765.09814453125
+while rc=0 
+counted add_right_down_y=81.34999918937683  self.param["bbox"][3] - self.param["bbox"][1]=12.0 
+ self.offset=0.0
+after while self.left_up=Point(35.0, 753.09814453125) self.right_down=Point(587.0, 765.09814453125)
