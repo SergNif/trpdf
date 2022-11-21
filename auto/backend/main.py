@@ -2,16 +2,16 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from core.config import settings
 from apis.general_pages.route_homepage import general_pages_router
+from apis.base import api_router #new
 from db.session import engine   #new
 from db.base import Base  #new
 
 
-# def create_tables():
-# 	print("create_tables")
-# 	Base.metadata.create_all(bind=engine)
+def include_router(app):   
+	app.include_router(api_router) #modified
 
-def include_router(app):
-	app.include_router(general_pages_router)
+# def include_router(app):
+# 	app.include_router(general_pages_router)
 
 
 def configure_static(app):

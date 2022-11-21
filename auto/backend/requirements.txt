@@ -14,3 +14,15 @@ psycopg2
 
 #for loading environment variables  #new
 python-dotenv
+
+#for loading environment variables
+python-dotenv
+
+#for email validation            #new
+pydantic[email] 
+#hashing              #new
+passlib[bcrypt] 
+
+#for testing       #new
+pytest
+requests
