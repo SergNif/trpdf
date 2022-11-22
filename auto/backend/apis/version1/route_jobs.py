@@ -8,8 +8,22 @@ from db.models.jobs import Job
 from schemas.jobs import JobCreate,ShowJob
 from db.repository.jobs import create_new_job, retreive_job, list_jobs,update_job_by_id 
 from db.repository.jobs import delete_job_by_id
+from db.models.users import User #new
+from apis.version1.route_login import get_current_user_from_token  #new
+from typing import Optional
+from db.repository.jobs import search_job
+
+
 
 router = APIRouter()
+
+@router.get("/autocomplete")
+def autocomplete(term: Optional[str] = None, db: Session = Depends(get_db)):
+    jobs = search_job(term, db=db)
+    job_titles = []
+    for job in jobs:
+        job_titles.append(job.title)
+    return job_titles
 
 
 @router.delete("/delete/{id}")
@@ -19,7 +33,8 @@ def delete_job(id: int,db: Session = Depends(get_db)):
     if not message:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail=f"Job with id {id} not found")
-    return {"msg":"Successfully deleted."}
+    # return {"msg":"Successfully deleted."}
+    return {"detail":"Successfully deleted."}
 
 
 @router.post("/create-job/",response_model=ShowJob)
@@ -52,3 +67,23 @@ def update_job(id: int,job: JobCreate,db: Session = Depends(get_db)):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail=f"Job with id {id} not found")
     return {"msg":"Successfully updated data."}
+
+
+@router.post("/create-job/", response_model=ShowJob)
+def create_job(job: JobCreate, db: Session = Depends(get_db),current_user:User = Depends(get_current_user_from_token)):  #new dependency here
+    job = create_new_job(job=job, db=db, owner_id=current_user.id)
+    return job
+
+
+
+@router.delete("/delete/{id}")
+def delete_job(id: int,db: Session = Depends(get_db),current_user: User = Depends(get_current_user_from_token)):
+    job = retreive_job(id =id,db=db)
+    if not job:
+        return HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail=f"Job with {id} does not exist")
+    print(job.owner_id,current_user.id,current_user.is_superuser)
+    if job.owner_id == current_user.id or current_user.is_superuser:
+        delete_job_by_id(id=id,db=db,owner_id=current_user.id)
+        return {"msg":"Successfully deleted."}
+    raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                            detail=f"You are not permitted!!!!")

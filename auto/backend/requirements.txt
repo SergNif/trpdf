@@ -28,3 +28,9 @@ pytest
 requests
 
 pre-commit
+
+#for jwt tokens    #new
+python-jose
+
+#for accessing form data       #new
+python-multipart

@@ -1,5 +1,5 @@
-import mimetypes, os, aiofiles, json
-
+import mimetypes, os, aiofiles, json, re
+from typing import Optional
 from typing import Union
 
 from fastapi import (
@@ -61,7 +61,8 @@ templates = Jinja2Templates(directory="templates")
 # app.mount("/static", StaticFiles(directory="/home/serg/python311_proj/fastapi/static"), name="static")
 
 mimetypes.add_type('application/javascript', '.js')
-app.mount("/home/serg/python311_proj/fastapi/static", StaticFiles(directory="static"), name="static")
+print(f'{os.getcwd()=}')
+app.mount("/home/serg/python311_proj/fastapi/static/static", StaticFiles(directory="static"), name="static")
 
 # os.system('python app/inotify__pp.py')
 
@@ -145,7 +146,36 @@ async def create_upload_files(upload: list[UploadFile], mail_name: str=Form(...)
             await out_file.write(content)
         print(f"File uploaded: {file.filename}")
     return {"file_name": upload}
-    
+
+
+@app.get("/search/")
+def search(
+    request: Request, query: Optional[str] = None
+):
+    jobs = search_job(query)
+    return templates.TemplateResponse(
+        "general_pages/homepage.html", {"request": request}
+    )
+
+@app.get("/autocomplete")
+def autocomplete(term: Optional[str] = None):
+    print(f'autocomplete {type(term)=} ' )
+    jobs = search_job(term)
+    # job_titles = []
+    # for job in jobs:
+    #     job_titles.append(job.title)
+    # return job_titles
+    return {"input":term}
+
+
+def search_job(query: str):
+    jobs = "NO"
+    if re.match("[^@]+@[^@]+\.[^@]+", query):
+        jobs = query + "OK"
+    print(f'{jobs=}')
+    return {"search":jobs}
+
+
 # create_upload_files(uploaded_files: list[UploadFile]):
 #     print(f'upload')
 #     for file in uploaded_files:
