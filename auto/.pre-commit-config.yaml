@@ -18,3 +18,4 @@
     rev: v2.3.6
     hooks:
     -   id: reorder-python-imports
+-   repo: https://github.com/Animatea/AnimateaBot
