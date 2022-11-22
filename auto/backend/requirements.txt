@@ -26,3 +26,5 @@ passlib[bcrypt]
 #for testing       #new
 pytest
 requests
+
+pre-commit
