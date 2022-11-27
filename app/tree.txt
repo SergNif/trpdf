@@ -1,0 +1,42 @@
+.
+├── README.md
+├── app
+│   ├── __init__.py
+│   ├── library
+│   │   ├── __init__.py
+│   │   └── helpers.py
+│   ├── main.py
+│   ├── pages
+│   │   ├── about.md
+│   │   ├── contact.md
+│   │   ├── home.md
+│   │   ├── info.md
+│   │   └── portfolio.md
+│   └── routers
+│       ├── __init.py
+│       ├── accordion.py
+│       ├── twoforms.py
+│       └── unsplash.py
+├── requirements.txt
+├── runtime.txt
+├── static
+│   ├── css
+│   │   ├── mystyle.css
+│   │   └── style3.css
+│   ├── images
+│   │   ├── favicon.ico
+│   │   └── logo.svg
+│   └── js
+│       └── index.js
+├── templates
+│   ├── accordion.html
+│   ├── base.html
+│   ├── include
+│   │   ├── sidebar.html
+│   │   └── topnav.html
+│   ├── page.html
+│   ├── twoforms.html
+│   └── unsplash.html
+└── tests
+    ├── __init__.py
+    └── test_main.py
