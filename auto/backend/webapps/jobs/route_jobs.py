@@ -82,3 +82,4 @@ def search(
 async def create_job(request: Request, 
        db: Session = Depends(get_db),
        current_user:User = Depends(get_current_user_from_token)):
+       pass

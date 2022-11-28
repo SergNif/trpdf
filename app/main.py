@@ -1,4 +1,8 @@
-import mimetypes, os, aiofiles, json, re
+import mimetypes
+import os
+import aiofiles
+import json
+import re
 from typing import Optional
 from typing import Union
 
@@ -62,9 +66,11 @@ templates = Jinja2Templates(directory="templates")
 
 mimetypes.add_type('application/javascript', '.js')
 print(f'{os.getcwd()=}')
-app.mount("/home/serg/python311_proj/fastapi/static/static", StaticFiles(directory="static"), name="static")
+app.mount("/home/serg/python311_proj/fastapi/static/static",
+          StaticFiles(directory="static"), name="static")
 
 # os.system('python app/inotify__pp.py')
+
 
 @app.get("/form")
 async def present_form():
@@ -86,17 +92,20 @@ async def present_form():
 #     }
 #     return templates.TemplateResponse("page.html", {"request": request, "data": data})
 
-#**********************************************
-UPLOAD_FOLDER = config.UPLOAD_FOLDER[0]  #f"{os.getcwd()}/uploadfiles/"
+# **********************************************
+UPLOAD_FOLDER = config.UPLOAD_FOLDER[0]  # f"{os.getcwd()}/uploadfiles/"
 # config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
-  
+
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
-  
+
+
 def allowed_file(filename):
- return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-#**********************************************
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+# **********************************************
+
+
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     # form = SearchForm(request.form)
@@ -104,7 +113,8 @@ async def home(request: Request):
     print(f'home')
     # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
-    
+
+
 @app.get("/page/{page_name}", response_class=HTMLResponse)
 async def show_page(request: Request, page_name: str):
     data = openfile(page_name+".md")
@@ -114,27 +124,27 @@ async def show_page(request: Request, page_name: str):
 # @app.route("/upload",methods=["POST","GET"])
 # def upload():
 #     # cursor = mysql.connection.cursor()
-#     # cur = mysql.connection.cursor(MySQLdb.cursors.DictCursor)   
+#     # cur = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
 #     if Request.method == 'POST':
 #         file = Request.files['file']
 #         filename = secure_filename(file.filename)
 #         now = datetime.now()
-         
+
 #         if file and allowed_file(file.filename):
 #            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
- 
+
 #         #    cur.execute("INSERT INTO uploads (file_name, upload_time) VALUES (%s, %s)",[file.filename, now])
 #         #    mysql.connection.commit()
 #         #    cur.close()
 #            print('File successfully uploaded ' + file.filename + ' to the database!')
 #         else:
-#            print('Invalid Uplaod only txt, pdf, png, jpg, jpeg, gif') 
-#         msg = 'Success Uplaod'     
+#            print('Invalid Uplaod only txt, pdf, png, jpg, jpeg, gif')
+#         msg = 'Success Uplaod'
 #     return jsonify(msg)
 
 
 @app.post("/uploadfiles")
-async def create_upload_files(upload: list[UploadFile], mail_name: str=Form(...)):
+async def create_upload_files(upload: list[UploadFile], mail_name: str = Form(...)):
     print(f'{os.getcwd()=} \n {UPLOAD_FOLDER=}')
     print(f'{mail_name=}')
     for file in upload:
@@ -142,7 +152,7 @@ async def create_upload_files(upload: list[UploadFile], mail_name: str=Form(...)
             content = await file.read()
             # st = await magic.from_file(out_file.name)
             # if ("PDF document" in st ):
-                
+
             await out_file.write(content)
         print(f"File uploaded: {file.filename}")
     return {"file_name": upload}
@@ -157,15 +167,16 @@ def search(
         "general_pages/homepage.html", {"request": request}
     )
 
+
 @app.get("/autocomplete")
 def autocomplete(term: Optional[str] = None):
-    print(f'autocomplete {type(term)=} ' )
+    print(f'autocomplete {type(term)=} ')
     jobs = search_job(term)
     # job_titles = []
     # for job in jobs:
     #     job_titles.append(job.title)
     # return job_titles
-    return {"input":term}
+    return {"input": term}
 
 
 def search_job(query: str):
@@ -173,7 +184,7 @@ def search_job(query: str):
     if re.match("[^@]+@[^@]+\.[^@]+", query):
         jobs = query + "OK"
     print(f'{jobs=}')
-    return {"search":jobs}
+    return {"search": jobs}
 
 
 # create_upload_files(uploaded_files: list[UploadFile]):
@@ -197,9 +208,8 @@ def search_job(query: str):
 #           "Cebu",
 #           "Quezon City",
 #           "Taguig"]
-#     print(cities)    
+#     print(cities)
 #     return Response(json.dumps(cities), mimetype='application/json')
-
 
 
 if __name__ == '__main__':
@@ -211,5 +221,3 @@ if __name__ == '__main__':
         port=8080,
         reload=True
     )
-    
-    
