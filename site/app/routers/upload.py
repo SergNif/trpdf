@@ -2,6 +2,8 @@ from fastapi import Request, Form, APIRouter, File, UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from library.helpers import *
+from typing import Optional
+import re
 
 
 router = APIRouter()
@@ -42,3 +44,32 @@ async def post_upload(imgdata: tuple, file: UploadFile = File(...)):
         "thumb_path": thumb_path
     }
     return data
+
+# @router.get("/autocomplete")
+# def autocomplete(term: Optional[str] = None, db: Session = Depends(get_db)):
+#     jobs = search_job(term, db=db)
+#     job_titles = []
+#     for job in jobs:
+#         job_titles.append(job.title)
+#     return job_titles
+
+
+@router.get("/autocomplete{ght}")
+def autocomplete(term: Optional[str] = None, ght: Optional[str]=None):
+    print(f'router {ght=}')
+    print(f'autocomplete {type(ght)=} ')
+    jobs = search_job(term)
+    # job_titles = []
+    # for job in jobs:
+    #     job_titles.append(job.title)
+    # return job_titles
+    return {"input": term}
+
+
+def search_job(query: str):
+    jobs = "NO"
+    print(query)
+    if re.match("[^@]+@[^@]+\.[^@]+", query):
+        jobs = query + "OK"
+    print(f'{jobs=}')
+    return {"search": jobs}

@@ -15,7 +15,7 @@ from fastapi import (
     status,
 )
 
-from fastapi import FastAPI, File, UploadFile, Request, Form, Response
+from fastapi import FastAPI, File, UploadFile, Request, Form, Response, APIRouter
 # from wtforms import StringField
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -53,6 +53,8 @@ html = """
 </html>
 """
 
+router = APIRouter()
+
 app = FastAPI()
 
 app.include_router(upload.router)
@@ -67,8 +69,11 @@ templates = Jinja2Templates(directory="templates")
 mimetypes.add_type('application/javascript', '.js')
 print(f'{os.getcwd()=}')
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/home/serg/python311_proj/fastapi/site/static/", StaticFiles(directory="static"), name="static")
 # os.system('python app/inotify__pp.py')
+
+
+
 
 
 @app.get("/form")
@@ -112,7 +117,14 @@ async def home(request: Request):
     print(f'home')
     # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
+    # return templates.TemplateResponse("ind.html", {"request": request})
 
+
+@app.get("/au", response_class=HTMLResponse)
+def home(requst: Request):
+    languages = ["C++", "Python", "PHP", "Java", "C", "Ruby","R", "C#", "Dart", "Fortran", "Pascal", "Javascript"]
+
+    return templates.TemplateResponse("auto.html", languages=languages)
 
 @app.get("/page/{page_name}", response_class=HTMLResponse)
 async def show_page(request: Request, page_name: str):
@@ -167,15 +179,30 @@ def search(
     )
 
 
-@app.get("/autocomplete")
-def autocomplete(term: Optional[str] = None):
+@app.get("/page/{page_name}", response_class=HTMLResponse)
+async def show_page(request: Request, page_name: str):
+    data = openfile(page_name+".md")
+    print(f'show page')
+    return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
+@app.get("/autocomplete/", response_class=HTMLResponse)
+def autocomplete( request: Request, term: Optional[str] = None):
+    print(f'main {term=}')
     print(f'autocomplete {type(term)=} ')
     jobs = search_job(term)
+# @app.get("/autocomplete")
+# def autocomplete(term: Optional[str] = None):
+#     print(f'autocomplete {type(term)=} ')
+#     jobs = search_job(term)
+    print(f'{jobs=}')
     # job_titles = []
     # for job in jobs:
     #     job_titles.append(job.title)
     # return job_titles
-    return {"input": term}
+    data = openfile("home.md")
+    print(f'home')
+    # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
+    return templates.TemplateResponse("page.html", {"request": request, "data": data})
 
 
 def search_job(query: str):

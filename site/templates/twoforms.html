@@ -26,7 +26,14 @@
     <input type="submit">
 </form>
 
-
+<p id="Email">Enter yuor mail for link for download translated document</p>
+</input>
+    <form class="d-flex" action="/search/">
+        <input class="form-control me-2" id="autocomplete" name="query" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+<form action="/uploadfiles" class="dropzone" id="my-great-dropzone">
+<input  name="mail_name{{ loop.index }}" type="text" value='' />
 
 {% endblock %}
 

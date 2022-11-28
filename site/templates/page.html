@@ -18,8 +18,20 @@
 
 {{data.page}}
 
-{% endblock %}
+<script type="text/javascript" src="/home/serg/python311_proj/fastapi/site/static/js/autocomplete.js"></script>
 
+
+
+ <!-- <form action="/autocomplete" autocomplete="on"> -->
+  
+     
+     
+     <!-- </form>  -->
+     <!-- <input class="search-box"> -->
+     <!-- <script src="{{ url_for('static', path='js/autocomplete.js') }}"></script> -->
+     <input class="search-box" name="query" id="autocomplete" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+     {% endblock %}
 {% block scripts %}
 {{ super() }}
 

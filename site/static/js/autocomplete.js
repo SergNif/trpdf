@@ -1,5 +1,7 @@
-$( function() {
-    $( "#autocomplete" ).autocomplete({
-      source: "/autocomplete"
-    });
-  } );
+$(function() {
+  $( "#autocomplete" ).autocomplete({
+  source: "/autocomplete",
+  minLength: 2
+  });
+});
+
