@@ -16,22 +16,16 @@
     </div>
 </main><!-- /.container -->
 
+
+
+<script type="text/javascript" src="{{ url_for('static', path='/js/autocomplete.js') }}"></script>
+<!-- <script type="text/javascript" src="/home/serg/python311_proj/fastapi/site/static/js/autocomplete.js"></script> -->
+<!-- <input class="search-box" name="query" id="autocomplete" type="text" placeholder="Search" aria-label="Search"> -->
+<!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+
 {{data.page}}
 
-<script type="text/javascript" src="/home/serg/python311_proj/fastapi/site/static/js/autocomplete.js"></script>
-
-
-
- <!-- <form action="/autocomplete" autocomplete="on"> -->
-  
-     
-     
-     <!-- </form>  -->
-     <!-- <input class="search-box"> -->
-     <!-- <script src="{{ url_for('static', path='js/autocomplete.js') }}"></script> -->
-     <input class="search-box" name="query" id="autocomplete" type="search" placeholder="Search" aria-label="Search">
-                 <button class="btn btn-outline-success" type="submit">Search</button>
-     {% endblock %}
+{% endblock %}
 {% block scripts %}
 {{ super() }}
 

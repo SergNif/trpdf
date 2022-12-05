@@ -1,0 +1,30 @@
+ vm1568523 	194.36.179.19  singapur
+vm440189        45.130.151.35 Домен 440189.msk-kvm.ru
+vm422627        94.103.183.73 Домен 422627.msk-kvm.ru
+22101060 IPV4: 195.234.208.168 IPV6: по запросу Netmask: 255.255.255.0 Gateway: 195.234.208.1
+
+sudo apt-get install ssh
+
+sudo service ssh stop|start|restart
+
+Основной файл конфигурации SSH-сервера — файл /etc/ssh/sshd_config
+
+sudo nano  /etc/ssh/sshd_config
+
+
+
+alias python="/usr/bin/python3.9"
+alias pip="/usr/bin/pip3"
+alias sshbot="ssh 'serg@45.130.151.35'"
+alias sshssd="ssh 'serg@195.234.208.168'"
+alias sshcmd="ssh -t serg@195.234.208.168"
+alias sshvpn= "ssh 'serg@185.195.26.149'"
+alias sshorcl="ssh 'ubuntu@143.47.178.77'"
+alias sshkarl="ssh 'ubuntu@141.144.194.228'"
+alias sn='sudo nano '
+alias sd='sudo '
+alias ll='ls -latr '
+alias lt='ls --tree'
+alias android="conda activate android"
+alias deac='conda deactivate'
+

@@ -15,16 +15,16 @@ from fastapi import (
     status,
 )
 
-from fastapi import FastAPI, File, UploadFile, Request, Form, Response, APIRouter
+from fastapi import FastAPI, File, UploadFile, Request, Form, Response
 # from wtforms import StringField
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from library.helpers import *
-from routers import upload, twoforms, unsplash, accordion
+from app.library.helpers import *
+from app.routers import upload, twoforms, unsplash, accordion
 from dotenv import load_dotenv
-import config
+import app.config as config
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -53,8 +53,6 @@ html = """
 </html>
 """
 
-router = APIRouter()
-
 app = FastAPI()
 
 app.include_router(upload.router)
@@ -64,20 +62,34 @@ app.include_router(accordion.router)
 
 templates = Jinja2Templates(directory="templates")
 
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request):
+    # form = SearchForm(request.form)
+    data = openfile("home.md")
+    print(f'home')
+    
+    return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
+
+@app.get("/page/{page_name}", response_class=HTMLResponse)
+async def show_page(request: Request, page_name: str):
+    data = openfile(page_name+".md")
+    print(f'show page')
+    return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
 # app.mount("/static", StaticFiles(directory="/home/serg/python311_proj/fastapi/static"), name="static")
 
 mimetypes.add_type('application/javascript', '.js')
 print(f'{os.getcwd()=}')
 
-app.mount("/static",
-          StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 # os.system('python app/inotify__pp.py')
 
 
-@app.get("/form")
-async def present_form():
-    print(f'form ********')
-    return HTMLResponse(html)
+# @app.get("/form")
+# async def present_form():
+#     print(f'form ********')
+#     return HTMLResponse(html)
 
 # @app.get("/", response_class=HTMLResponse)
 # async def home(request: Request):
@@ -108,30 +120,6 @@ def allowed_file(filename):
 # **********************************************
 
 
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
-    # form = SearchForm(request.form)
-    data = openfile("home.md")
-    print(f'home')
-    # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
-    # return templates.TemplateResponse("ind.html", {"request": request})
-
-
-@app.get("/au", response_class=HTMLResponse)
-def home(requst: Request):
-    languages = ["C++", "Python", "PHP", "Java", "C", "Ruby",
-                 "R", "C#", "Dart", "Fortran", "Pascal", "Javascript"]
-
-    return templates.TemplateResponse("auto.html", languages=languages)
-
-
-@app.get("/page/{page_name}", response_class=HTMLResponse)
-async def show_page(request: Request, page_name: str):
-    data = openfile(page_name+".md")
-    print(f'show page')
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
-
 # @app.route("/upload",methods=["POST","GET"])
 # def upload():
 #     # cursor = mysql.connection.cursor()
@@ -155,10 +143,9 @@ async def show_page(request: Request, page_name: str):
 
 
 @app.post("/uploadfiles")
-# , mail_name: str = Form(...)):
-async def create_upload_files(upload: list[UploadFile]):
+async def create_upload_files(upload: list[UploadFile]): #, mail_name: str = Form(...)):
     print(f'{os.getcwd()=} \n {UPLOAD_FOLDER=}')
-    # print(f'{mail_name=}')
+    print(f'{mail_name=}')#
     for file in upload:
         async with aiofiles.open(f"{UPLOAD_FOLDER}{file.filename}", "wb") as out_file:
             content = await file.read()
@@ -180,31 +167,15 @@ def search(
     )
 
 
-@app.get("/page/{page_name}", response_class=HTMLResponse)
-async def show_page(request: Request, page_name: str):
-    data = openfile(page_name+".md")
-    print(f'show page')
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
-
-
-@app.get("/autocomplete/", response_class=HTMLResponse)
-def autocomplete(request: Request, term: Optional[str] = None):
-    print(f'main {term=}')
+@app.get("/autocomplete")
+def autocomplete(term: Optional[str] = None):
     print(f'autocomplete {type(term)=} ')
     jobs = search_job(term)
-# @app.get("/autocomplete")
-# def autocomplete(term: Optional[str] = None):
-#     print(f'autocomplete {type(term)=} ')
-#     jobs = search_job(term)
-    print(f'{jobs=}')
     # job_titles = []
     # for job in jobs:
     #     job_titles.append(job.title)
     # return job_titles
-    data = openfile("home.md")
-    print(f'home')
-    # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
+    return {"input": term}
 
 
 def search_job(query: str):
@@ -249,6 +220,8 @@ if __name__ == '__main__':
         port=8080,
         reload=True
     )
+
+
 
 
 # from fastapi import FastAPI, Request

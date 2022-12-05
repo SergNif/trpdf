@@ -1,0 +1,149 @@
+conda create --name fastdl python=3.9   создать окружение
+
+conda config --set auto_activate_base false   не активировать при загрузке
+
+source ~/.bashrc войти в среду конды
+export PATH=~/anaconda3/bin:$PATH
+
+conda activate fastdl   активировать среду окружения environmnet
+
+conda deactivate   деактивировать среду окружения environmnet
+
+conda list  список установленных библиотек
+
+conda info --envs  список окружений  или  conda env list
+
+conda install -c pythorch pythorch       установка библиотек
+
+conda remove name_packet     удаление пакетов
+
+conda install -c anaconda jupyter      и запуск  jupyter notebook
+
+conda env export -n grammbot > environment.yml  записать пакеты conda в файл
+conda env create -f path/to/environment.yml    создать окружение и установить пакеты conda из файла 
+
+ps -ax | grep nginx    поиск процесса
+
+learn = create_cnn(data, models.resnet50, metrics=[acc02, f_score])
+
+
+kaggle datasets download -d alexattia/the-simpsons-characters-dataset
+
+replit.com
+
+serg555@#NIF14
+
+load_model('/content/gdrive/MyDrive/model777', learn, opt=None)
+imgs2 = [ learn.predict(dsetsTest[id][0])[0] for id in range(0,991)]
+
+dde-launcher  запуск лончера
+sergnif
+
+wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh  загрузка скрипта установки conda на VPS openvpn 
+bash Anaconda3-2021.11-Linux-x86_64.sh  запуск установки conda
+
+
+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        github token
+ca66f30b33e0065210a204c61934d7af3d171885        wandb.ai
+После подключения к удалённому хосту по SSH, наберите в командной строке:
+
+tmux
+Вы откроете новую сессию с новым окном — здесь вы можете делать всё что угодно как в обычном терминале.
+Отсоединение сессии Tmux от терминала
+tmux detach
+Либо вы можете использовать сочетание клавиш, нажмите Ctrl+b, а затем нажмите d.
+Возобновление фоновой сессии Tmux
+tmux attach
+
+ df -h
+свободное место на диске
+
+sergSERG11
+
+sudo su
+openvpn --config /home/serg/sterx.ovpn  запуск VPN на этом компьютере
+
+ssh  94.103.183.73    VPN    Time-Host  99rub
+
+ssh root@185.195.26.149  подключение к 20GB  firstByte  gram.ml
+ssh 'serg@185.195.26.149'
+
+ssh 'serg@195.234.208.168' подключение к SSD 20GB 2GB   estt.ru  60rub
+
+ssh 'serg@45.130.151.35' подключение второй сервер где vpn  telegrambot  firstByte
+
+cat .ssh/id_rsa.pub | ssh serg@195.234.208.168 'cat >> .ssh/authorized_keys'
+
+sergNF@#201git
+sergNIF11
+
+#/etc/alternatives/uwsgi-plugin-python3
+ --wsgi-file myflaskapp.py --calla
+
+добавление юзера
+sudo adduser serg
+sudo usermod -aG sudo serg
+логиниться по ключам, локально:
+ssh-keygen -A
+ssh-copy-id serg@185.195.26.149
+
+       /etc/group
+           содержит информацию о группах
+
+       /etc/gshadow
+           содержит защищаемую информацию о группах
+
+       /etc/login.defs
+           содержит конфигурацию подсистемы теневых паролей
+
+       /etc/passwd
+           содержит информацию о пользователях
+
+       /etc/shadow
+           содержит защищаемую информацию о пользователях
+
+настройка ssh
+sudo nano /etc/ssh/sshd_config
+
+назначение прав для редактирования файлов vscode remote-ssh
+sudo chown -R serg /etc/nginx/sites-enabled/
+
+
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitRootLogin no
+перезапуск ssh
+systemctl restart sshd  или  service sshd restart
+
+назначить владельца папки
+sudo chown serg:serg /var/www
+
+bot.gramm.ml   185.180.230.62
+TLG.GRAMM.ML   185.195.265.149
+
+gr.tgram.ml    45.130.151.35
+
+server
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install -y mosh tmux htop git curl wget unzip zip gcc build-essential
+
+sudo apt-get install -y zsh tree redis-server nginx zlib1g-dev libbz2-dev libreadline-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev python3-dev python3-lxml  python-libxml2  libffi-dev libssl-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
+
+cd /var/www/html/
+sudo su
+sudo python3.9 -m venv flaskapp
+source /var/www/html/flaskapp/bin/activate
+/var/www/html/flaskapp/bin/python3.9 -m pip install --upgrade pip
+pip install wheel
+
+
+ssh-keygen -f "/home/serg/.ssh/known_hosts" -R "185.195.26.149"
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/tlg.gramm.ml/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/tlg.gramm.ml/privkey.pem
+
+ ps aux | grep process_name найти просесс
+
