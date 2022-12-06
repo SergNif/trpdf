@@ -11,7 +11,7 @@
 <head>
     <title>Some Upload Form</title>
     <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 
 <!--   <title>Drag and Drop File Upload using DropzoneJS Python Flask PostgreSQL</title>   -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -23,6 +23,27 @@
 
 </head>
 <body>
+<style>  .dropzone {
+    border: 3px dashed #139CFF;
+    color: blueviolet;
+    margin: 2rem 0;
+    background: #2f2e2e !important;
+    border-radius: 20px;
+  }
+  /* .dz-preview, .dz-file-preview, .dz-processing, .dz-success, .dz-complete, .dz-details {
+    color: blueviolet;
+  } */
+ strong, .dz-file-preview, .dz-processing, .dz-success, .dz-complete, .dz-preview, .dz-details, .dz-filename.span, .dz-preview, .dz-details, .dz-size.span {
+    margin: 2rem 0;
+    color: rgba(0,0,0,.9);
+    background-color: rgba(255,255,255,.4);
+    padding: 0 .4em;
+    border-radius: 8px;
+    background: #fafafa !important;
+  }
+  
+
+  </style>
     <p><b>Enter yuor mail for link for download translated document:<b><Br></p>
     <input name="email" type="text" id="control_e_mail" autocomplete="off" required placeholder="e-mail"/>
     <!-- <input  name="mail_name" type="text" value='e-mail' id="control_e_mail" /> -->
@@ -32,17 +53,16 @@
     <!-- <ul id='messagesMM'>
     </ul> -->
     <p></p>
-        <div class="container" id="container_drop"> 
-                <div class="dz-message needsclick">
-        <form action="/uploadfiles" class="dropzone" id="my-great-dropzone">
-        <!-- <input  name="mail_name{{ loop.index }}" type="text" value='sd@sa.io' /> -->
-                                    <label for="upload_costum"  class="upload_label">
+    <div class="container" id="container_drop"> 
+        <div class="dz-message needsclick">
+            <form action="/uploadfiles" class="dropzone" id="my-great-dropzone">
+                <img alt="Dropzone.js" src="https://raw.githubusercontent.com/dropzone/dropzone/assets/github-logo.svg" />
+                <label for="upload_costum"  class="upload_label">
                     <div class="image">
                         <img src="" alt="">
                     </div>
                     <i class="fas fa-cloud-upload-alt"></i>
-                    </label>
-                        <img alt="Dropzone.js" src="https://raw.githubusercontent.com/dropzone/dropzone/assets/github-logo.svg" />
+                </label>
     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <!-- JavaScript Bundle with Popper -->
@@ -53,16 +73,16 @@
     <!-- <script type='text/javascript' src="../static/js/autocomplete.js"></script>> -->
     <!-- <markdown <script src="{{ url_for('static', path='js/autocomplete.js') }}"></script>></<markdown> -->
     <!-- <input type="email" name="mail_name2" value="" /> -->
-       <script>
-        Dropzone.options.myGreatDropzone = { // camelized version of the `id`
-            paramName: "upload", // The name that will be used to transfer the file
-            parallelUploads: 10, // Number of parallel upload
-            maxFiles: 10,
-            maxFilesize: 450, // MB
-        };
-    </script>
-                </form>
-                    </div>
+                <script>
+                    Dropzone.options.myGreatDropzone = { // camelized version of the `id`
+                        paramName: "upload", // The name that will be used to transfer the file
+                        parallelUploads: 10, // Number of parallel upload
+                        maxFiles: 10,
+                        maxFilesize: 450, // MB
+                    };
+                </script>
+            </form>
+        </div>
     </div>
     <!--     <form class="d-flex" action="/search/">
             <input class="form-control me-2" id="autocomplete" name="query" type="search" placeholder="Search" aria-label="Search">
