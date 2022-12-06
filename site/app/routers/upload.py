@@ -1,7 +1,8 @@
 from fastapi import Request, Form, APIRouter, File, UploadFile
-from fastapi.responses import HTMLResponse
+from pathlib import Path
+from fastapi.responses import HTMLResponse, UJSONResponse
 from fastapi.templating import Jinja2Templates
-from library.helpers import *
+from library.helpers import * 
 from typing import Optional
 import re
 
@@ -54,16 +55,48 @@ async def post_upload(imgdata: tuple, file: UploadFile = File(...)):
 #     return job_titles
 
 
-@router.get("/autocomplete{ght}")
-def autocomplete(term: Optional[str] = None, ght: Optional[str]=None):
-    print(f'router {ght=}')
-    print(f'autocomplete {type(ght)=} ')
+# @router.get("/autocomplete{ght}")
+@router.get("/mch", response_class=UJSONResponse)
+# def autocomplete(term: Optional[str] = None, ght: Optional[str]=None):
+async def autocomplete(request: Request, term: Optional[str] = None):
+    print(f'router {term=}')
+    print(f'autocomplete {type(term)=} ')
     jobs = search_job(term)
+    print(f'{jobs["search"]=}')
     # job_titles = []
     # for job in jobs:
     #     job_titles.append(job.title)
     # return job_titles
-    return {"input": term}
+    # return {"input": term}
+    data = openfile("home.md")
+    print(f'home')
+    pg_html = { "request": request, "data": data, "enter": list(term)}
+    print(f'{type(pg_html)=}')
+    g=dict(term=term)
+    return templates.TemplateResponse("page.html", 
+    context={'request': request, "data":data, "term":term} )
+    # return {"term":term}
+
+@router.post("/autoc", response_class=HTMLResponse)
+# def autocomplete(term: Optional[str] = None, ght: Optional[str]=None):
+async def autocomplete(request: Request, term: Optional[str] = None):
+    print(f'router {term=}')
+    print(f'autocomplete {type(term)=} ')
+    jobs = search_job(term)
+    print(f'{jobs["search"]=}')
+    # job_titles = []
+    # for job in jobs:
+    #     job_titles.append(job.title)
+    # return job_titles
+    # return {"input": term}
+    data = openfile("home.md")
+    print(f'home')
+    pg_html = { "request": request, "data": data, "enter": list(term)}
+    print(f'{type(pg_html)=}')
+    g=dict(term=term)
+    return templates.TemplateResponse("page.html", 
+    context={'request': request, "data":data, "term":term} )
+
 
 
 def search_job(query: str):
@@ -71,5 +104,4 @@ def search_job(query: str):
     print(query)
     if re.match("[^@]+@[^@]+\.[^@]+", query):
         jobs = query + "OK"
-    print(f'{jobs=}')
     return {"search": jobs}

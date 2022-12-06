@@ -16,7 +16,7 @@
     <title>Some Upload Form</title>
 <!-- <script type="text/javascript" src="{{ url_for('static', filename='/js/autocomplete.js') }}"></script> -->
 <!-- <script type="text/javascript" src="/home/serg/python311_proj/fastapi/site/static/js/autocomplete.js"></script> -->
-<input class="search-box" name="query" id="autocomplete" type="text" placeholder="Search" aria-label="Search">
+<!-- <input class="search-box" name="query" id="autocomplete" type="text" placeholder="Search" aria-label="Search"> -->
 <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
 <p></p>
 <p></p>
@@ -31,7 +31,7 @@
             paramName: "upload", // The name that will be used to transfer the file
             parallelUploads: 10, // Number of parallel upload
             maxFiles: 10,
-            maxFilesize: 450, // MB
+            maxFilesize: 650, // MB
         };
     </script>
     <p id="Email">Enter yuor mail for link for download translated document</p>

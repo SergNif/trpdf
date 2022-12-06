@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}FastAPI Starter{% endblock %}
+{% block head %}
+{{ super() }}
+
+{% endblock %}
+
+{% block page_content %}
+{% include 'include/sidebar.html' %}
+<main role="main" class="container-fluid">
+    <div class="row">
+        <div class="col">
+            {{data.text|safe}}
+        </div>
+    </div>
+</main><!-- /.container -->
+
+
+
+<script type="text/javascript" src="{{ url_for('static', path='/js/autocomplete.js') }}"></script>
+<!-- <script type="text/javascript" src="/home/serg/python311_proj/fastapi/site/static/js/autocomplete.js"></script> -->
+<!-- <input class="search-box" name="query" id="autocomplete" type="text" placeholder="Search" aria-label="Search"> -->
+<!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+
+
+{{data.page}}
+<ul id="autocmpl">
+    {% if data%}
+    <p>data {{ enter }}</p>
+    <p>data {{ data }}</p>
+    {% for key,val in pg_html %}
+        <li>key val</li>
+    {% endfor %}
+    {% endif %}
+    </ul>
+<h4>head = {{ term|upper }}</h4>
+{% endblock %}
+{% block scripts %}
+{{ super() }}
+
+
+{% endblock %}

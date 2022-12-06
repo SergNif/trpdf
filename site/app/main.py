@@ -109,14 +109,56 @@ def allowed_file(filename):
 
 
 @app.get("/", response_class=HTMLResponse)
-async def home(request: Request):
+async def home(request: Request, term: Optional[str] = None):
     # form = SearchForm(request.form)
     data = openfile("home.md")
     print(f'home')
+    if term is None:
+        term = "teerrmm"
+
+
+ 
+    print(f'router {term=}')
+    print(f'autocomplete {type(term)=} ')
+    jobs = search_job(term)
+    print(f'{jobs["search"]=}')
+    # job_titles = []
+    # for job in jobs:
+    #     job_titles.append(job.title)
+    # return job_titles
+    # return {"input": term}
+    data = openfile("home.md")
+    print(f'home')
+    pg_html = { "request": request, "data": data, "enter": list(term)}
+    print(f'{type(pg_html)=}')
+
+
+
     # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
+    return templates.TemplateResponse("page.html", {"request": request, "data": data, "term": term})
     # return templates.TemplateResponse("ind.html", {"request": request})
 
+
+# @app.get("/autocomplete/", response_class=HTMLResponse)
+# async def autocomplete(request: Request, term: Optional[str] = 'None'):
+#     print(f'autocomplete {type(term)=} ')
+#     jobs = search_job(term)
+# # @app.get("/autocomplete")
+# # def autocomplete(term: Optional[str] = None):
+# #     print(f'autocomplete {type(term)=} ')
+# #     jobs = search_job(term)
+#     print(f'{jobs=}')
+#     # job_titles = []
+#     # for job in jobs:
+#     #     job_titles.append(job.title)
+#     # return job_titles
+#     data = openfile("home.md")
+#     print(f'home')
+#     term += "hhhh"
+#     print(f'main {term=}')
+#     # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
+#     return templates.TemplateResponse("page.html", context={"request": request, "data": data, "term":term})
+#     # return {"request": request,"term":term}
 
 @app.get("/au", response_class=HTMLResponse)
 def home(requst: Request):
@@ -125,12 +167,20 @@ def home(requst: Request):
 
     return templates.TemplateResponse("auto.html", languages=languages)
 
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    while True:
+        data = await websocket.receive_text()
+        print(f'{data=}')
+        await websocket.send_text(f"Message text was: {data}")
 
 @app.get("/page/{page_name}", response_class=HTMLResponse)
 async def show_page(request: Request, page_name: str):
     data = openfile(page_name+".md")
     print(f'show page')
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
 
 # @app.route("/upload",methods=["POST","GET"])
 # def upload():
@@ -180,31 +230,6 @@ def search(
     )
 
 
-@app.get("/page/{page_name}", response_class=HTMLResponse)
-async def show_page(request: Request, page_name: str):
-    data = openfile(page_name+".md")
-    print(f'show page')
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
-
-
-@app.get("/autocomplete/", response_class=HTMLResponse)
-def autocomplete(request: Request, term: Optional[str] = None):
-    print(f'main {term=}')
-    print(f'autocomplete {type(term)=} ')
-    jobs = search_job(term)
-# @app.get("/autocomplete")
-# def autocomplete(term: Optional[str] = None):
-#     print(f'autocomplete {type(term)=} ')
-#     jobs = search_job(term)
-    print(f'{jobs=}')
-    # job_titles = []
-    # for job in jobs:
-    #     job_titles.append(job.title)
-    # return job_titles
-    data = openfile("home.md")
-    print(f'home')
-    # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
 
 
 def search_job(query: str):
