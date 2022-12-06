@@ -3,9 +3,17 @@
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+* {
+background: #2f2e2e;
+}
+.fa-align-left,
+#sidebarCollapse > span:nth-child(2){
+    background-color: #5bc0de !important;
+    border-color: #46b8da;
+}
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #2f2e2e;
 }
 
 p {
@@ -13,13 +21,14 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: rgb(207, 203, 203);
 }
 
 a,
 a:hover,
 a:focus {
-    color: inherit;
+    /* color: inherit; */
+    color: rgb(58, 82, 217) !important ;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -31,6 +40,7 @@ a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    color: rgb(58, 82, 217);
 }
 
 .navbar-btn {
@@ -84,7 +94,7 @@ a:focus {
 }
 
 #dismiss:hover {
-    background: #fff;
+    background: rgb(70, 69, 69);
     color: #7386D5;
 }
 
@@ -188,4 +198,49 @@ a.article:hover {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    padding: 6rem;
+  }
+  main {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .dropzone {
+    border: 3px dashed #139CFF;
+    color: blueviolet;
+    margin: 2rem 0;
+  }
+  small {
+    display: block;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1em;
+    color: rgb(207, 203, 203)  !important;
+}
+#content {
+
+    color: rgb(207, 203, 203)  !important;
+}
+input[type=text]
+{
+    height: 30px;
+    width: 30em;
+    color: rgb(207, 203, 203)  !important;
+}
+
+input[type=number],
+input[type=submit]
+{
+    
+    width: 10em;
+    color: rgb(207, 203, 203)  !important;
+}
+
+div {
+    color: rgb(207, 203, 203)  !important;
+
 }

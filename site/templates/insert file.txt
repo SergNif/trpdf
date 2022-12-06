@@ -1,0 +1,61 @@
+</script>   
+
+<!-- скрипт websocket -->
+<div class="websocket">
+<h1>WebSocket Chat</h1>
+
+<form action="" onsubmit="sendMessage(event)">
+    <input type="text" id="messageText" autocomplete="off" required placeholder="e-mail"/>
+    <!-- <button>Send</button> -->
+</form>
+<ul id='messagesMM'>
+</ul>
+<script>
+    var ws = new WebSocket("ws://localhost:8080/ws");
+    ws.onmessage = function(event) {
+        var messages = document.getElementById('messages')
+        var message = document.createElement('li')
+        var content = document.createTextNode(event.data)
+        message.appendChild(content)
+        messages.appendChild(message)
+    };
+    function sendMessage(event) {
+        var input = document.getElementById("messageText")
+        ws.send(input.value)
+        input.value = ''
+        event.preventDefault()
+    }
+    // скрипт autocomplete
+    $(function() {
+  $( "#messageText" ).autocomplete({
+  source: "/",
+  minLength: 3
+  });
+  });
+
+
+  //   ************  функция проверяет поле messageText на соответствие e-mail 
+// и скрывает или показывает поле drop-zone c id=my-great-dropzone  ***********
+$(document).ready(function(){
+    
+    $('#messageText').keyup(function(){
+        var type_content = $(this).val();
+        var messages = document.getElementById('messagesMM')
+        var message_text = message.text()
+        var message = document.createElement('li')
+        messages.appendChild(message)
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        
+        $('#messagesMM').text(type_content);
+        
+        // тут скрывает или показывает поле drop-zone по условию соответствия e-mail  ***********
+          if ( !emailReg.test( type_content ) ||  $(this).val().length == 0  ) {
+            // alert('Please enter valid email');
+            $( "#container_drop" ).hide();
+        } else {
+            // alert('Thank you for your valid email');
+            $( "#field_term" ).text(type_content);
+            $( "#container_drop" ).show();
+        }
+    });
+ });

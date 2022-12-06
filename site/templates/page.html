@@ -28,70 +28,52 @@
 {{data.page}}
 <!-- скрывает поле drop-zone -->
 <script>
-     $( "#my-great-dropzone" ).hide();
-</script>   
+     $( "#container_drop" ).hide();
 
-<!-- скрипт websocket -->
-<div class="websocket">
-<h1>WebSocket Chat</h1>
-<form action="" onsubmit="sendMessage(event)">
-    <input type="text" id="messageText" autocomplete="off"/>
-    <!-- <button>Send</button> -->
-</form>
-<ul id='messagesMM'>
-</ul>
-<script>
-    var ws = new WebSocket("ws://localhost:8080/ws");
-    ws.onmessage = function(event) {
-        var messages = document.getElementById('messages')
-        var message = document.createElement('li')
-        var content = document.createTextNode(event.data)
-        message.appendChild(content)
-        messages.appendChild(message)
-    };
-    function sendMessage(event) {
-        var input = document.getElementById("messageText")
-        ws.send(input.value)
-        input.value = ''
-        event.preventDefault()
-    }
     // скрипт autocomplete
     $(function() {
-  $( "#messageText" ).autocomplete({
-  source: "/",
+  $( "#control_e_mail" ).autocomplete({
+  source: "/mch",
   minLength: 3
   });
   });
-//  ..............
+//  .............. тут были фуекции websocket и другие. эта вырезка в файле "insert file.txt"
 
 //   ************  функция провеки строки на соответствие e-mail тут не задействована ***********
 function isValidEmailAddress(emailAddress) {
     var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
     return pattern.test(emailAddress);
 }
-//   ************  функция провеки строки на соответствие e-mail тут не задействована ***********
+//   ************   ***********
 
-//   ************  функция проверяет поле messageText на соответствие e-mail 
-// и скрывает или показывает поле drop-zone c id=my-great-dropzone  ***********
+
+
+ // и скрывает или показывает поле drop-zone c id=my-great-dropzone  ***********
 $(document).ready(function(){
     
-    $('#messageText').keyup(function(){
+    var message_text = $('#Email').text()
+    $('#control_e_mail').keyup(function(){
+        var messages = document.getElementById('Email')
         var type_content = $(this).val();
-        var messages = document.getElementById('messagesMM')
-        var message = document.createElement('li')
-        messages.appendChild(message)
+        // var message = document.createElement('p')
+        // messages.appendChild(message)
+        // messages.text(type_content)
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        
-        $('#messagesMM').text(type_content);
+        // console.log(message_text);
+        // console.log(type_content);
+        // $('#Email').append(type_content);
+        $('#Email').each(function () {
+        $('#Email').text(message_text + type_content);
+        });
         
         // тут скрывает или показывает поле drop-zone по условию соответствия e-mail  ***********
           if ( !emailReg.test( type_content ) ||  $(this).val().length == 0  ) {
             // alert('Please enter valid email');
-            $( "#my-great-dropzone" ).hide();
+            $( "#container_drop" ).show();
         } else {
             // alert('Thank you for your valid email');
             $( "#field_term" ).text(type_content);
-            $( "#my-great-dropzone" ).show();
+            $( "#container_drop" ).show();
         }
     });
  });

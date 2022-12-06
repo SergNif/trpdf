@@ -115,25 +115,6 @@ async def home(request: Request, term: Optional[str] = None):
     print(f'home')
     if term is None:
         term = "teerrmm"
-
-
- 
-    print(f'router {term=}')
-    print(f'autocomplete {type(term)=} ')
-    jobs = search_job(term)
-    print(f'{jobs["search"]=}')
-    # job_titles = []
-    # for job in jobs:
-    #     job_titles.append(job.title)
-    # return job_titles
-    # return {"input": term}
-    data = openfile("home.md")
-    print(f'home')
-    pg_html = { "request": request, "data": data, "enter": list(term)}
-    print(f'{type(pg_html)=}')
-
-
-
     # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
     return templates.TemplateResponse("page.html", {"request": request, "data": data, "term": term})
     # return templates.TemplateResponse("ind.html", {"request": request})
@@ -210,8 +191,10 @@ async def create_upload_files(upload: list[UploadFile]):
     print(f'{os.getcwd()=} \n {UPLOAD_FOLDER=}')
     # print(f'{mail_name=}')
     for file in upload:
-        async with aiofiles.open(f"{UPLOAD_FOLDER}{file.filename}", "wb") as out_file:
+        print(f'{file.filename=}')
+        async with aiofiles.open(f"{UPLOAD_FOLDER}/{file.filename}", "wb") as out_file:
             content = await file.read()
+            # print(f'{content=}')
             # st = await magic.from_file(out_file.name)
             # if ("PDF document" in st ):
 

@@ -12,6 +12,6 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-UPLOAD_FOLDER="/home/serg/python311_proj/fastapi/uploadfiles",
+UPLOAD_FOLDER="/home/serg/python311_proj/fastapi/site/uploadfiles",
 FONTSIZE = 9,
 FONTFILE="/home/serg/Загрузки/MesloLGS NF Regular.ttf",

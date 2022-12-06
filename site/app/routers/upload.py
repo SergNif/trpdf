@@ -73,11 +73,11 @@ async def autocomplete(request: Request, term: Optional[str] = None):
     pg_html = { "request": request, "data": data, "enter": list(term)}
     print(f'{type(pg_html)=}')
     g=dict(term=term)
-    return templates.TemplateResponse("page.html", 
-    context={'request': request, "data":data, "term":term} )
-    # return {"term":term}
+    # return templates.TemplateResponse("page.html", 
+    # context={'request': request, "data":data, "term":term} )
+    return {"term":term}
 
-@router.post("/autoc", response_class=HTMLResponse)
+@router.post("/autocomplete", response_class=HTMLResponse)
 # def autocomplete(term: Optional[str] = None, ght: Optional[str]=None):
 async def autocomplete(request: Request, term: Optional[str] = None):
     print(f'router {term=}')
