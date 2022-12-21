@@ -69,7 +69,7 @@ $(document).ready(function(){
         // тут скрывает или показывает поле drop-zone по условию соответствия e-mail  ***********
           if ( !emailReg.test( type_content ) ||  $(this).val().length == 0  ) {
             // alert('Please enter valid email');
-            $( "#container_drop" ).show();
+            $( "#container_drop" ).hide();
         } else {
             // alert('Thank you for your valid email');
             $( "#field_term" ).text(type_content);

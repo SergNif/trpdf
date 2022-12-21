@@ -1,0 +1,34 @@
+2022-12-08 13:43:18.556 | ERROR    | __main__:cickle_while:394 - An error has been caught in function 'cickle_while', process 'MainProcess' (12461), thread 'MainThread' (139960186380352):
+Traceback (most recent call last):
+
+  File "/home/serg/python311_proj/fastapi/site/app/library/translate.py", line 481, in <module>
+    translate_doc(doc=doc, folder='/home/serg/python311_proj/fastapi/site/uploadfiles', filename='pymupdf.pdf')
+    │                 └ Document('/home/serg/Загрузки/pymupdf.pdf')
+    └ <function translate_doc at 0x7f4ab6bfab60>
+
+  File "/home/serg/python311_proj/fastapi/site/app/library/translate.py", line 468, in translate_doc
+    pdf.start()
+    │   └ <function MakePDF.start at 0x7f4ab6bfaac0>
+    └ <__main__.MakePDF object at 0x7f4ab6a5b290>
+
+  File "/home/serg/python311_proj/fastapi/site/app/library/translate.py", line 428, in start
+    self.cickle_while()
+    │    └ <function MakePDF.cickle_while at 0x7f4ab6bfaa20>
+    └ <__main__.MakePDF object at 0x7f4ab6a5b290>
+
+> File "/home/serg/python311_proj/fastapi/site/app/library/translate.py", line 394, in cickle_while
+    rc = self.make_paragraph(add_right_down_y=add_right_down_y)
+         │    │                               └ -7.01873779296875
+         │    └ <function MakePDF.make_paragraph at 0x7f4ab6bfa5c0>
+         └ <__main__.MakePDF object at 0x7f4ab6a5b290>
+
+  File "/home/serg/python311_proj/fastapi/site/app/library/translate.py", line 291, in make_paragraph
+    rc = self.shape.insert_textbox(
+         │    │     └ <function Shape.insert_textbox at 0x7f4b02f52840>
+         │    └ <fitz.utils.Shape object at 0x7f4ab6b0b290>
+         └ <__main__.MakePDF object at 0x7f4ab6a5b290>
+
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/fitz/utils.py", line 3551, in insert_textbox
+    raise ValueError("text box must be finite and not empty")
+
+ValueError: text box must be finite and not empty

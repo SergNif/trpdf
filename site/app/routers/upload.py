@@ -3,6 +3,7 @@ from pathlib import Path
 from fastapi.responses import HTMLResponse, UJSONResponse
 from fastapi.templating import Jinja2Templates
 from library.helpers import * 
+from library.translate import *
 from typing import Optional
 import re
 

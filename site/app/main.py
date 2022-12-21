@@ -1,6 +1,7 @@
-import mimetypes
+import mimetypes, traceback, logging
 import os
 import aiofiles
+from pathlib import Path
 import json
 import re
 from typing import Optional
@@ -22,6 +23,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from library.helpers import *
+from library.translate import *
+from library.func_translate import  translate 
 from routers import upload, twoforms, unsplash, accordion
 from dotenv import load_dotenv
 import config
@@ -64,6 +67,24 @@ app.include_router(accordion.router)
 
 templates = Jinja2Templates(directory="templates")
 
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request): #, term: Optional[str] = None):
+    # form = SearchForm(request.form)
+    data = openfile("home.md")
+    print(f'home')
+    # if term is None:
+    term = "teerrmm"
+    # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
+    return templates.TemplateResponse("page.html", {"request": request, "data": data, "term": term})
+
+@app.get("/page/{page_name}", response_class=HTMLResponse)
+async def show_page(request: Request, page_name: str):
+    data = openfile(page_name+".md")
+    print(f'show page')
+    return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
+    # return templates.TemplateResponse("ind.html", {"request": request})
+
 # app.mount("/static", StaticFiles(directory="/home/serg/python311_proj/fastapi/static"), name="static")
 
 mimetypes.add_type('application/javascript', '.js')
@@ -74,10 +95,10 @@ app.mount("/static",
 # os.system('python app/inotify__pp.py')
 
 
-@app.get("/form")
-async def present_form():
-    print(f'form ********')
-    return HTMLResponse(html)
+# @app.get("/form")
+# async def present_form():
+#     print(f'form ********')
+#     return HTMLResponse(html)
 
 # @app.get("/", response_class=HTMLResponse)
 # async def home(request: Request):
@@ -107,17 +128,35 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 # **********************************************
 
+@app.post("/uploadfiles")
+# , mail_name: str = Form(...)):
+async def create_upload_files(upload: list[UploadFile]):
+    print(f'{os.getcwd()=} \n {UPLOAD_FOLDER=}')
+    # print(f'{mail_name=}')
+    for file in upload:
+        print(f'{file.filename=}')
+        async with aiofiles.open(f"{UPLOAD_FOLDER}/{file.filename}", "wb") as out_file:
+            content = await file.read()
+            # print(f'{content=}')
+            # st = await magic.from_file(out_file.name)
+            # if ("PDF document" in st ):
 
-@app.get("/", response_class=HTMLResponse)
-async def home(request: Request, term: Optional[str] = None):
-    # form = SearchForm(request.form)
-    data = openfile("home.md")
-    print(f'home')
-    if term is None:
-        term = "teerrmm"
-    # return templates.TemplateResponse("upload.html", {"request": request, "data": data})
-    return templates.TemplateResponse("page.html", {"request": request, "data": data, "term": term})
-    # return templates.TemplateResponse("ind.html", {"request": request})
+            await out_file.write(content)
+        print(f"File uploaded: {file.filename}")
+    translate(folder=UPLOAD_FOLDER, filename=file.filename)
+    return {"file_name": upload}
+
+
+# @app.get("/search/")
+# def search(
+#     request: Request, query: Optional[str] = None
+# ):
+#     jobs = search_job(query)
+#     return templates.TemplateResponse(
+#         "general_pages/homepage.html", {"request": request}
+#     )
+
+
 
 
 # @app.get("/autocomplete/", response_class=HTMLResponse)
@@ -141,12 +180,12 @@ async def home(request: Request, term: Optional[str] = None):
 #     return templates.TemplateResponse("page.html", context={"request": request, "data": data, "term":term})
 #     # return {"request": request,"term":term}
 
-@app.get("/au", response_class=HTMLResponse)
-def home(requst: Request):
-    languages = ["C++", "Python", "PHP", "Java", "C", "Ruby",
-                 "R", "C#", "Dart", "Fortran", "Pascal", "Javascript"]
+# @app.get("/au", response_class=HTMLResponse)
+# def home(requst: Request):
+#     languages = ["C++", "Python", "PHP", "Java", "C", "Ruby",
+#                  "R", "C#", "Dart", "Fortran", "Pascal", "Javascript"]
 
-    return templates.TemplateResponse("auto.html", languages=languages)
+#     return templates.TemplateResponse("auto.html", languages=languages)
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
@@ -155,13 +194,6 @@ async def websocket_endpoint(websocket: WebSocket):
         data = await websocket.receive_text()
         print(f'{data=}')
         await websocket.send_text(f"Message text was: {data}")
-
-@app.get("/page/{page_name}", response_class=HTMLResponse)
-async def show_page(request: Request, page_name: str):
-    data = openfile(page_name+".md")
-    print(f'show page')
-    return templates.TemplateResponse("page.html", {"request": request, "data": data})
-
 
 # @app.route("/upload",methods=["POST","GET"])
 # def upload():
@@ -185,42 +217,14 @@ async def show_page(request: Request, page_name: str):
 #     return jsonify(msg)
 
 
-@app.post("/uploadfiles")
-# , mail_name: str = Form(...)):
-async def create_upload_files(upload: list[UploadFile]):
-    print(f'{os.getcwd()=} \n {UPLOAD_FOLDER=}')
-    # print(f'{mail_name=}')
-    for file in upload:
-        print(f'{file.filename=}')
-        async with aiofiles.open(f"{UPLOAD_FOLDER}/{file.filename}", "wb") as out_file:
-            content = await file.read()
-            # print(f'{content=}')
-            # st = await magic.from_file(out_file.name)
-            # if ("PDF document" in st ):
-
-            await out_file.write(content)
-        print(f"File uploaded: {file.filename}")
-    return {"file_name": upload}
 
 
-@app.get("/search/")
-def search(
-    request: Request, query: Optional[str] = None
-):
-    jobs = search_job(query)
-    return templates.TemplateResponse(
-        "general_pages/homepage.html", {"request": request}
-    )
-
-
-
-
-def search_job(query: str):
-    jobs = "NO"
-    if re.match("[^@]+@[^@]+\.[^@]+", query):
-        jobs = query + "OK"
-    print(f'{jobs=}')
-    return {"search": jobs}
+# def search_job(query: str):
+#     jobs = "NO"
+#     if re.match("[^@]+@[^@]+\.[^@]+", query):
+#         jobs = query + "OK"
+#     print(f'{jobs=}')
+#     return {"search": jobs}
 
 
 # create_upload_files(uploaded_files: list[UploadFile]):

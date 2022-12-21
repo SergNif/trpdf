@@ -1,0 +1,127 @@
+: 1671533140:0;ls -latr
+: 1671533140:0;zsh
+: 1671533140:0;source ~/.p10k.zsh
+: 1671533140:0;sn .zsh_history
+: 1671533140:0;sudo nano /etc/ssh/sshd_config
+: 1671533140:0;sn .bash_history
+: 1671533140:0;where cp
+: 1671533140:0;where cpg
+: 1671533140:0;source ~/.zshrc
+: 1671533140:0;sudo nano .zshrc
+: 1671533162:0;cp ~/.p10k.zsh ~/.p10k_old.zsh
+: 1671533451:0;p10k configure
+: 1671533907:0;sn ~/.p10k_old.zsh
+: 1671533970:0;rm ~/.p10k.zsh
+: 1671534011:0;cp ~/.p10k_old.zsh ~/.p10k.zsh
+: 1671534050:0;cat ~/.p10k.zsh
+: 1671534293:0;sn ~/.p10k.zsh
+: 1671534697:0;locale -a
+: 1671534827:0;sudo dpkg-reconfigure locales
+: 1671535905:0;autoload -Uz compinstall && compinstall
+: 1671535983:0;autoload -U compinit
+: 1671538446:0;sn ~/.zshrc\\
+q
+: 1671540055:0;apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+: 1671540089:0;sudo apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
+: 1671540163:0;python3 -V
+: 1671540178:0;wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz
+: 1671540203:0;tar -xvf Python-3.11.0.tgz & rm -f Python-3.11.0.tgz & cd Python-3.11.0
+: 1671540339:0;cd Python-3.11.0
+: 1671540350:0;./configure --prefix=/usr --enable-optimizations
+: 1671540412:0;make -j 4 & make altinstall
+: 1671541410:0;where python*
+: 1671541469:0;python
+: 1671541475:0;ll
+: 1671541499:0;llt Python
+: 1671541532:0;llt
+: 1671541555:0;python*
+: 1671541655:0;make altinstall
+: 1671541669:0;sn README.rst
+: 1671541687:0;sudo make altinstall
+: 1671541759:0;python3.11
+: 1671541773:0;where python3
+: 1671541788:0;llt /usr/bin/python3
+: 1671541798:0;where python3.11
+: 1671541925:0;python3.11 -m pip --version
+: 1671542265:0;dpkg -l | grep python
+: 1671542309:0;llt /usr/bin/python*
+: 1671542447:0;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 1
+: 1671542475:0;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 2
+: 1671542552:0;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.11 2
+: 1671542556:0;sudo update-alternatives --config python
+: 1671542616:0;sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1
+: 1671542637:0;sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
+: 1671542644:0;sudo update-alternatives --config python3
+: 1671543023:0;sn .zshrc
+: 1671543445:0;export PATH=''/home/serg/.local/bin'\
+q
+: 1671543461:0;export PATH='/home/serg/.local/bin'
+: 1671543539:0;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+: 1671543554:0;python -m pip install --user --upgrade pip
+: 1671543591:0;python -m pip install --user virtualenv
+: 1671543936:0;echo \«export PATH=»$PATH:/home/serg/.local/bin"\" ~/.bashrc
+: 1671544002:0;export PATH='$PATH:/home/serg/.local/bin' ~/.bashrc
+: 1671544045:0;export PATH='$PATH:/home/serg/.local/bin'
+: 1671544110:0;export PATH='/home/serg/.local/share/zinit/polaris/bin:/usr/local/bin:/usr/bin:/bin:/usr/games:/home/serg/.local/bin'
+: 1671544113:0;echo $PATH
+: 1671544197:0;mkdir fastap/site
+: 1671544208:0;mkdir -p fastap/site
+: 1671544232:0;python -m venv fastap
+: 1671544267:0;source fastap/bin/activate
+: 1671544289:0;which python
+: 1671544304:0;python -V
+: 1671544930:0;sudo apt install libpq-dev python3-dev
+: 1671545082:0;python -m pip install -U torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu
+: 1671545199:0;sn requirements20_12.txt
+: 1671545331:0;python -m pip install -U sentencepiece
+: 1671545449:0;pip3.11 install sentencepiece
+: 1671545469:0;sudo pip3.11 install sentencepiece
+: 1671545492:0;pip3.11 install --upgrade pip
+: 1671545554:0;pip install sentencepiece
+: 1671545565:0;git clone https://github.com/google/sentencepiece.git
+: 1671545577:0;cd sentencepiece
+: 1671545595:0;mkdir build
+: 1671545602:0;cd build
+: 1671545730:0;sudo apt install cmake
+: 1671545740:0;cmake .. -DSPM_ENABLE_SHARED=OFF -DCMAKE_INSTALL_PREFIX=./root
+: 1671545762:0;make install
+: 1671545976:0;cd ..
+: 1671546042:0;sudo find / -iname "setup.py"
+: 1671546150:0;cd sentencepiece/build
+: 1671546221:0;pip3.11 install whell
+: 1671546239:0;pip install whell
+: 1671546288:0;python -m pip install -U whell
+: 1671546309:0;python -m pip install -U wheel
+: 1671546436:0;python /home/serg/Python-3.11.0/setup.py bdist_wheel --with-openssl-rpath=auto
+: 1671546690:0;python -m pip install -U openssl
+: 1671546880:0;python -m pip install -U python3-openssl
+: 1671546929:0;python -m pip install -U pyopenssl
+: 1671546970:0;sudo apt install python3-openssl
+: 1671547046:0;mkdir -p /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547181:0;sudo mkdir -p /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547238:0;rm -r /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547356:0;mkdir /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547447:0;rm /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547479:0;sudo mv /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547543:0;sudo rm /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547556:0;sudo rmdir /usr/lib/python3.11/config-3.11-x86_64-linux-gnu/Tools/scripts/pydoc3
+: 1671547816:0;sudo find ./ -name 'plugins'
+: 1671547839:0;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+: 1671547903:0;git clone https://github.com/zsh-users/zsh-autosuggestions ./.local/share/zinit/plugins/plugins/zsh-autosuggestions
+: 1671547957:0;git clone https://github.com/zsh-users/zsh-autosuggestions ./.local/share/zinit/snippets/plugins/zsh-autosuggestions
+: 1671548026:0;source ./.local/share/zinit/snippets/plugins/zsh-autosuggestions
+: 1671548150:0;$ sudo apt-get install build-essential
+: 1671548154:0;sudo apt-get install build-essential
+: 1671548197:0;sn ~/.zshrc
+: 1671548387:0;rzsh
+: 1671549238:0;cd fastap
+: 1671549263:0;source bin/activate
+: 1671549320:0;pip install pymupdf-fonts
+: 1671549347:0;python setup.py bdist_wheel
+: 1671549371:0;python /home/serg/Python-3.11.0/setup.py bdist_wheel
+: 1671549389:0;python -m pip install -r requirements20_12.txt
+: 1671549685:0;python -m pip freeze requirementDebian20_12.txt
+: 1671550130:0;sn /etc/ssh/sshd_config
+: 1671550145:0;sudo service ssh restart
+: 1671550147:0;sudo service ssh status
+: 1671550155:0;exit

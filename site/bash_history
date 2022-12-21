@@ -1,0 +1,91 @@
+sudo nano /etc/ssh/ssh_config
+sudo nano /etc/ssh/ssh_config.d
+ls -la /etc/ssh/ssh_config.d/
+ls -la /etc/
+ls -la /etc/ssh
+sudo nano /etc/ssh/ssh_config
+sudo service ssh stop|start|restart
+sudo service ssh status
+zsh
+sudo nano /etc/ssh/ssh_config
+exit
+sudo nano /etc/ssh/ssh_config
+sudo service ssh restart
+sudo service ssh status
+exit
+ll
+sudo service ssh status
+sudo nano /etc/ssh/ssh_config
+sudo service ssh restart
+sudo service ssh status
+ls -la /etc/ssh
+sudo nano /etc/ssh/ssh_config
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+systemctl status ssh.service
+journalctl -xe
+systemctl status ssh.service
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+sudo service ssh status
+systemctl status ssh.service
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+sudo service ssh status
+systemctl status ssh.service
+exit
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+systemctl status ssh.service
+exit
+sudo nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/ssh_config
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+systemctl status ssh.service
+journalctl -xe
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+exit
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+exit
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+exit
+sudo nano ~/.zshrc
+ls -latr
+zsh
+apt-get install zsh
+sudo apt-get install zsh
+sudo apt-get install zsh --fix-missing
+sudo apt install zsh --fix-missing
+sudo apt update
+sudo apt upgrade
+sudo nano /etc/ssh/sshd_config
+sudo service ssh restart
+sudo apt dist-upgrade
+exit
+sudo apt install wget curl htop git proxychains4 screenfetch tmux bash-completion fcitx5-rime fcitx5-material-color zsh fonts-powerline fzf net-tools openssh-server firewalld bat
+chsh -s /bin/zsh
+sudo chsh -s /bin/zsh
+sudo ln -s ~/.zshrc /root
+ls -latr
+pwd
+sudo apt install zsh
+exit
+ls -latr
+sudo chsh -s /bin/zsh
+zsh
+exit
+chsh -s /bin/zsh
+sudo ln -s ~/.zshrc /root
+chsh -s $(which zsh)
+zsh
+exit

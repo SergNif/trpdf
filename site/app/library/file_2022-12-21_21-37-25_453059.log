@@ -1,0 +1,128 @@
+2022-12-21 21:37:30.177 | ERROR    | __main__:cickle_while:441 - An error has been caught in function 'cickle_while', process 'MainProcess' (15371), thread 'MainThread' (140259899486272):
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel_launcher.py", line 17, in <module>
+    app.launch_new_instance()
+    │   └ <bound method Application.launch_instance of <class 'ipykernel.kernelapp.IPKernelApp'>>
+    └ <module 'ipykernel.kernelapp' from '/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/kernelapp.py'>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/traitlets/config/application.py", line 982, in launch_instance
+    app.start()
+    │   └ <function IPKernelApp.start at 0x7f90c9782de0>
+    └ <ipykernel.kernelapp.IPKernelApp object at 0x7f90cc598590>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/kernelapp.py", line 712, in start
+    self.io_loop.start()
+    │    │       └ <function BaseAsyncIOLoop.start at 0x7f90cb377060>
+    │    └ <tornado.platform.asyncio.AsyncIOMainLoop object at 0x7f90c9d3f690>
+    └ <ipykernel.kernelapp.IPKernelApp object at 0x7f90cc598590>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/tornado/platform/asyncio.py", line 215, in start
+    self.asyncio_loop.run_forever()
+    │    │            └ <function BaseEventLoop.run_forever at 0x7f90cbb737e0>
+    │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+    └ <tornado.platform.asyncio.AsyncIOMainLoop object at 0x7f90c9d3f690>
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 604, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f90cbb7d620>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f90cbb0a480>
+    └ <Handle Task.task_wakeup(<Future finis...bd0>, ...],))>)>
+  File "/usr/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finis...bd0>, ...],))>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finis...bd0>, ...],))>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finis...bd0>, ...],))>)>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 510, in dispatch_queue
+    await self.process_one()
+          │    └ <function Kernel.process_one at 0x7f90ca0080e0>
+          └ <ipykernel.ipkernel.IPythonKernel object at 0x7f90c97f49d0>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 499, in process_one
+    await dispatch(*args)
+          │         └ ([<zmq.sugar.frame.Frame object at 0x7f90c9766810>, <zmq.sugar.frame.Frame object at 0x7f90c97668d0>, <zmq.sugar.frame.Frame ...
+          └ <bound method Kernel.dispatch_shell of <ipykernel.ipkernel.IPythonKernel object at 0x7f90c97f49d0>>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 406, in dispatch_shell
+    await result
+          └ <coroutine object Kernel.execute_request at 0x7f90c99f66c0>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/kernelbase.py", line 730, in execute_request
+    reply_content = await reply_content
+                          └ <coroutine object IPythonKernel.do_execute at 0x7f90a8089fc0>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 383, in do_execute
+    res = shell.run_cell(
+          │     └ <bound method __VSCODE_wrap_run_cell.<locals>.wrapper of <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>>
+          └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>
+
+  File "/tmp/ipykernel_15371/417503853.py", line 28, in wrapper
+    result = old_func(*args, **kwargs)
+             │         │       └ {'store_history': True, 'silent': False, 'cell_id': 'vscode-notebook-cell:Interactive-1.interactive#X11sdnNjb2RlLWludGVyYWN0a...
+             │         └ (<ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>, 'from base64 import encode\nfrom distutils.command.config...
+             └ <function ZMQInteractiveShell.run_cell at 0x7f90c97802c0>
+
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/ipykernel/zmqshell.py", line 528, in run_cell
+    return super().run_cell(*args, **kwargs)
+                             │       └ {'store_history': True, 'silent': False, 'cell_id': 'vscode-notebook-cell:Interactive-1.interactive#X11sdnNjb2RlLWludGVyYWN0a...
+                             └ ('from base64 import encode\nfrom distutils.command.config import config\nimport numbers , traceback, logging\nfrom pydoc imp...
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 2940, in run_cell
+    result = self._run_cell(
+             │    └ <function InteractiveShell._run_cell at 0x7f90ca89ba60>
+             └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 2995, in _run_cell
+    return runner(coro)
+           │      └ <coroutine object InteractiveShell.run_cell_async at 0x7f9057a47c60>
+           └ <function _pseudo_sync_runner at 0x7f90cabc6ca0>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/IPython/core/async_helpers.py", line 129, in _pseudo_sync_runner
+    coro.send(None)
+    │    └ <method 'send' of 'coroutine' objects>
+    └ <coroutine object InteractiveShell.run_cell_async at 0x7f9057a47c60>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3194, in run_cell_async
+    has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
+                       │    │             │        │     └ '<ipython-input-8-2d0cd8e68685>'
+                       │    │             │        └ [<ast.ImportFrom object at 0x7f9057248d00>, <ast.ImportFrom object at 0x7f9057248d60>, <ast.Import object at 0x7f9057248dc0>,...
+                       │    │             └ <ast.Module object at 0x7f9057248cd0>
+                       │    └ <function InteractiveShell.run_ast_nodes at 0x7f90ca89bd80>
+                       └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3373, in run_ast_nodes
+    if await self.run_code(code, result, async_=asy):
+             │    │        │     │              └ False
+             │    │        │     └ <ExecutionResult object at 7f9057048590, execution_count=8 error_before_exec=None error_in_exec=None info=<ExecutionInfo obje...
+             │    │        └ <code object <module> at 0x7f9057b0e670, file "<ipython-input-8-2d0cd8e68685>", line 1>
+             │    └ <function InteractiveShell.run_code at 0x7f90ca89be20>
+             └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/IPython/core/interactiveshell.py", line 3433, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+         │         │    │               │    └ {'__name__': '__main__', '__doc__': 'Automatically created module for IPython interactive environment', '__package__': None, ...
+         │         │    │               └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>
+         │         │    └ <property object at 0x7f90cabcd350>
+         │         └ <ipykernel.zmqshell.ZMQInteractiveShell object at 0x7f90c9797c90>
+         └ <code object <module> at 0x7f9057b0e670, file "<ipython-input-8-2d0cd8e68685>", line 1>
+  File "<ipython-input-8-2d0cd8e68685>", line 529, in <module>
+    translate_doc(doc=doc, folder='/home/serg/python311_proj/fastapi/site/uploadfiles', filename='pymupdf.pdf')
+    │                 └ Document('/home/serg/Загрузки/pymupdf.pdf')
+    └ <function translate_doc at 0x7f905a3d7d80>
+  File "<ipython-input-8-2d0cd8e68685>", line 516, in translate_doc
+    pdf.start()
+    │   └ <function MakePDF.start at 0x7f905a3d79c0>
+    └ <__main__.MakePDF object at 0x7f9057296ad0>
+  File "<ipython-input-8-2d0cd8e68685>", line 476, in start
+    self.cickle_while()
+    │    └ <function MakePDF.cickle_while at 0x7f905a3d7a60>
+    └ <__main__.MakePDF object at 0x7f9057296ad0>
+> File "<ipython-input-8-2d0cd8e68685>", line 441, in cickle_while
+    rc = self.make_paragraph(add_right_down_y=add_right_down_y)
+         │    │                               └ 23.495147705078125
+         │    └ <function MakePDF.make_paragraph at 0x7f905a3d4360>
+         └ <__main__.MakePDF object at 0x7f9057296ad0>
+  File "<ipython-input-8-2d0cd8e68685>", line 338, in make_paragraph
+    rc = self.shape.insert_textbox(
+         │    │     └ <function Shape.insert_textbox at 0x7f90c06f2ca0>
+         │    └ <fitz.utils.Shape object at 0x7f90570b9d10>
+         └ <__main__.MakePDF object at 0x7f9057296ad0>
+  File "/home/serg/python311_proj/lib/python3.11/site-packages/fitz/utils.py", line 3591, in insert_textbox
+    if fname.startswith("/"):
+       └ 24.787099838256836
+
+AttributeError: 'float' object has no attribute 'startswith'
